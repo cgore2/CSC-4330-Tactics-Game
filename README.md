@@ -1,4 +1,4 @@
-# Tactics-Game-4330
+# CSC-4330-Tactics-Game
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
