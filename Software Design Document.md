@@ -30,6 +30,7 @@ Revision History
 |---|---|---|---|
 |Christopher Gore|10/31|Creation of Document|1.0|
 |Christopher Gore|10/31|Initial entries into Introduction and Database Sections|1.1|
+|Daniel LaBorde|11/1|Initial entries for Development View|1.2|
 
 ###1. Introduction
 ####i. Purpose
@@ -44,6 +45,7 @@ Sub-Dolphin Machine is based on turn based tactical full-awareness games in the 
 ###3. Sub-systems architecture 
 ###4. Rational for each architectural choice    
 ###5. Development view
+![developmentview](https://cloud.githubusercontent.com/assets/22534157/19904672/909abfc8-a041-11e6-9f23-8dcfb1279616.png)
 ###6. Physical view
 ###7. Database view
 A database will not be implemented in this project.  This section is kept in should the future iterations of this project call for the use of a database.
