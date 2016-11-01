@@ -5,7 +5,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.1
+Version 1.3
 
 ###Table of Contents
 Table of Contents  
@@ -30,7 +30,8 @@ Revision History
 |---|---|---|---|
 |Christopher Gore|10/31|Creation of Document|1.0|
 |Christopher Gore|10/31|Initial entries into Introduction and Database Sections|1.1|
-|Daniel LaBorde|11/1|Initial entries for Development View|1.2|
+|Daniel LaBorde|11/1|Initial entries into Development View|1.2|
+|Daniel LaBorde|11/1|Initial entries into Physical View and Element Catalog (view key)|1.3|
 
 ###1. Introduction
 ####i. Purpose
@@ -45,10 +46,12 @@ Sub-Dolphin Machine is based on turn based tactical full-awareness games in the 
 ###3. Sub-systems architecture 
 ###4. Rational for each architectural choice    
 ###5. Development view
-![developmentview](https://cloud.githubusercontent.com/assets/22534157/19904672/909abfc8-a041-11e6-9f23-8dcfb1279616.png)
+![developmentview](https://cloud.githubusercontent.com/assets/22534157/19905052/26e4c162-a043-11e6-89e0-47a6ed666d6e.png)
 ###6. Physical view
+![physicalview](https://cloud.githubusercontent.com/assets/22534157/19904930/b3ae25c6-a042-11e6-8e3a-7dc989eff98a.png)
 ###7. Database view
 A database will not be implemented in this project.  This section is kept in should the future iterations of this project call for the use of a database.
 ###8. Work-assignment view
 ###9. Element catalog
+![elementviewkey](https://cloud.githubusercontent.com/assets/22534157/19905199/b087470a-a043-11e6-858a-e2182a3972db.png)
 ###10. User interfaces
