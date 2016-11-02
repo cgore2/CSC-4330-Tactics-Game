@@ -85,7 +85,7 @@ Navigation shall be a component of the player engine, which will then be extende
 3.3 Skirmish
 The skirmish mode shall be the main mode of play. This mode is played through the GUI. The mode utilizes the artistic assets and manipulate them through the player and enemy engines. 
 
-3.5 Game Movement
+3.4 Game Movement
 Selected units can be moved, controlled and manipulated through the player engine. This change is then shown on the GUI. Unites that defeat another unit score points for their controller, unites that are defeated are removed from the screen and is recorded as such.
 
 ###4. Rational for each architectural choice    
