@@ -55,7 +55,7 @@ Sub-Dolphin Machine is based on turn based tactical full-awareness games in the 
 ###5. Development view
 ![developmentdiagram](https://cloud.githubusercontent.com/assets/22534157/19913109/990cb0ea-a06d-11e6-907c-7ffbb4abeff4.png)
 
-Description: The game will be built using the Unity game development engine and programmed using the C# programming language. 
+The game will be built using the Unity game development engine and programmed using the C# programming language. 
 ###6. Physical view
 ![physicalview](https://cloud.githubusercontent.com/assets/22534157/19913205/69c45eea-a06e-11e6-8761-6b277f97ec00.png)
 
