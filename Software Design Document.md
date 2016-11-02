@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.9
+Version 1.10
 
 ###Table of Contents
 Table of Contents  
@@ -46,6 +46,7 @@ Revision History
 |Christopher Gore & Stephen Harb|11/1|Added the user interface diagram|1.7|
 |Mason Meredith|11/2|Initial entry into Main system architecture added iv to section 1|1.8|
 |Christopher Gore|11/2|Removed section iv. from Main system architecture & minor edits|1.9|
+|Stephen Harb|11/2|Removed Section 3 addition |1.10|
 
 
 ###1. Introduction
@@ -75,6 +76,15 @@ Once the user has actually selected a 2D tile map the game will begin. This stag
 
 
 ###3. Technical system architecture 
+3.1. Overview
+The game needs to be designed with user tactical ability as the focus. The system architecture shall be modulated into the player engine, the enemy engine, GUI, , and artistic assets. The game is focused around the interaction with the player and enemy engine. The enemy engine inherits the abilities of the player engine, and includes an automated choice system which makes tactical decisions. The GUI shall include the menu and the modes of play. 
+3.2. Navigation
+Navigation shall be a component of the player engine, which will then be extended to the GUI. The navigation subcomponent is responsible for control of certain elements within the GUI which then transfer information back to the player engine. This facilitates game play.
+3.3 Skirmish
+The skirmish mode shall be the main mode of play. This mode is played through the GUI. The mode utilizes the artistic assets and manipulate them through the player and enemy engines. 
+3.5 Game Movement
+Selected units can be moved, controlled and manipulated through the player engine. This change is then shown on the GUI. Unites that defeat another unit score points for their controller, unites that are defeated are removed from the screen and is recorded as such.
+
 ###4. Rational for each architectural choice    
 ###5. Development view
 ![developmentdiagram](https://cloud.githubusercontent.com/assets/22534157/19913109/990cb0ea-a06d-11e6-907c-7ffbb4abeff4.png)
