@@ -62,6 +62,15 @@ Sub-Dolphin Machine is based on turn based tactical full-awareness games in the 
 At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the storage, pre game maneuvering, and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
 
 ###2. Main system architecture (Logical view)
+2. Game System architecture
+2.1 Overview
+2.2 Game Maps
+2.3 Play Maps
+2.4 Sprites
+2.5 Player Control
+2.6 Menu Interface
+2.7 Victory Conditions
+
 i. Overview  
 The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish and campaign menu.  These two menus also allow for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish and campaign menu also hold the difficulty level of the game and a possible saved game. These two features are introduced for a those unable to play the game for continued game enjoyment as well as ensuring that progress in the game is not lost. The 2D tile map is reached through either the campaign menu, or the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
 
