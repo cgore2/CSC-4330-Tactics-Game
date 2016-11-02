@@ -5,7 +5,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.3
+Version 1.4
 
 ###Table of Contents
 Table of Contents  
@@ -32,6 +32,7 @@ Revision History
 |Christopher Gore|10/31|Initial entries into Introduction and Database Sections|1.1|
 |Daniel LaBorde|11/1|Initial entries into Development View|1.2|
 |Daniel LaBorde|11/1|Initial entries into Physical View and Element Catalog (view key)|1.3|
+|Daniel LaBorde|11/1|Minor fixes and added description in section 6 |1.4|
 
 ###1. Introduction
 ####i. Purpose
@@ -46,12 +47,14 @@ Sub-Dolphin Machine is based on turn based tactical full-awareness games in the 
 ###3. Sub-systems architecture 
 ###4. Rational for each architectural choice    
 ###5. Development view
-![developmentview](https://cloud.githubusercontent.com/assets/22534157/19905052/26e4c162-a043-11e6-89e0-47a6ed666d6e.png)
+![developmentdiagram](https://cloud.githubusercontent.com/assets/22534157/19913109/990cb0ea-a06d-11e6-907c-7ffbb4abeff4.png)
+Description: 
 ###6. Physical view
-![physicalview](https://cloud.githubusercontent.com/assets/22534157/19904930/b3ae25c6-a042-11e6-8e3a-7dc989eff98a.png)
+![physicalview](https://cloud.githubusercontent.com/assets/22534157/19913205/69c45eea-a06e-11e6-8761-6b277f97ec00.png)
+Description: All elements of the game can be accessed through a computer or mobile device. The device then interacts with the LAN server in order to connect with other players. No databases or other servers are needed. 
 ###7. Database view
 A database will not be implemented in this project.  This section is kept in should the future iterations of this project call for the use of a database.
 ###8. Work-assignment view
 ###9. Element catalog
-![elementviewkey](https://cloud.githubusercontent.com/assets/22534157/19905199/b087470a-a043-11e6-858a-e2182a3972db.png)
+![elementcatalog](https://cloud.githubusercontent.com/assets/22534157/19913211/7206a266-a06e-11e6-866b-cd8abd39e8aa.png)
 ###10. User interfaces
