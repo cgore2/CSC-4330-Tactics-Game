@@ -33,6 +33,7 @@ Revision History
 |Daniel LaBorde|11/1|Initial entries into Development View|1.2|
 |Daniel LaBorde|11/1|Initial entries into Physical View and Element Catalog (view key)|1.3|
 |Daniel LaBorde|11/1|Minor fixes and added description in section 6 |1.4|
+|Christopher Gore|11/1|Addition of description in section 5 and preliminary formatting in section 8|1.5|
 
 ###1. Introduction
 ####i. Purpose
@@ -48,6 +49,8 @@ Sub-Dolphin Machine is based on turn based tactical full-awareness games in the 
 ###4. Rational for each architectural choice    
 ###5. Development view
 ![developmentdiagram](https://cloud.githubusercontent.com/assets/22534157/19913109/990cb0ea-a06d-11e6-907c-7ffbb4abeff4.png)
+
+Description: The game will be built using the Unity game development engine and programmed using the C# programming language. 
 ###6. Physical view
 ![physicalview](https://cloud.githubusercontent.com/assets/22534157/19913205/69c45eea-a06e-11e6-8761-6b277f97ec00.png)
 
@@ -55,6 +58,10 @@ Description: All elements of the game can be accessed through a computer or mobi
 ###7. Database view
 A database will not be implemented in this project.  This section is kept in should the future iterations of this project call for the use of a database.
 ###8. Work-assignment view
+The system logic will be handled by:  
+The User Interface will be handled by:  
+The art assets will be handled by:  
+The game sound will be handled by:  
 ###9. Element catalog
 ![elementcatalog](https://cloud.githubusercontent.com/assets/22534157/19913211/7206a266-a06e-11e6-866b-cd8abd39e8aa.png)
 ###10. User interfaces
