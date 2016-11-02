@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.8
+Version 1.9
 
 ###Table of Contents
 Table of Contents  
@@ -19,8 +19,7 @@ Revision History
     1. Overview
     2. Navigation
     3. Skirmish/ Campaign function
-    4. Saved Game/ Load game
-    5. Game movement/ action
+    4. Game movement/ action
 3. Technical system architecture   
 4. Rational for each architectural choice    
 5. Development view
@@ -46,6 +45,8 @@ Revision History
 |Christopher Gore|11/1|Initial entry into User Interface and updated Table of Contents|1.6|
 |Christopher Gore & Stephen Harb|11/1|Added the user interface diagram|1.7|
 |Mason Meredith|11/2|Initial entry into Main system architecture added iv to section 1|1.8|
+|Christopher Gore|11/2|Removed section iv. from Main system architecture & minor edits|1.9|
+
 
 ###1. Introduction
 ####i. Purpose
@@ -56,8 +57,8 @@ The following document is intended for reading for team members, LSU CSC student
 ####iii. Scope
 Sub-Dolphin Machine is based on turn based tactical full-awareness games in the vein of chess and Square Enix’s Final Fantasy Tactics Advance as well as other games within the genre. The games main artistic contribution to the genre is the addition of armed dolphins. The game will involve deep turn based strategy and player advancement as well as the ability to control the in-game avatars, which will be dolphins with cannons on them. The player will progress through different levels of the game, level up, and unlock new items for customization along the way.
 
-####iv. Design summary 
-	At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the storage, pre game maneuvering, and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
+####iv. Design summary
+At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the storage, pre game maneuvering, and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
 
 ###2. Main system architecture (Logical view)
 i. Overview  
@@ -69,11 +70,7 @@ ii. Navigation
 iii. Skirmish/ Campaign function
 	This might appear to be a broad category, but in reality it underlines a straightforward difference. On the main menu the user will chose either a Campaign or a Skirmish mode. Put simply there will be two campaigns one being the dolphins(easy), and the other being the sharks(hard). The sharks are set at a disadvantage because you will start the game as sharks where the dolphin campaigns ends. So, as the dolphin campaign starts easy and gets slowly harder, the shark campaign goes from hard to harder. Thus, if the user chooses the sharks they will end up with a highly difficult game but if user pick dolphins the game will be easy. Meanwhile, the skirmish mode will be exactly as stated in the SRS document under External Interface Requirements at Tactical Planning Interface 3.1.6. So, skirmish mode will have a simple drop down with difficulty, and and a simple choice of dolphin or sharks with a preordained map. 
 
-
-iv. Saved Game/ Load game
-	The saved/ load game feature of the game is meant to be a progress-retaining feature. The game may take more time than can be completed in one sitting, so the save feature located in the SRS 3.1.7 Systems Option Interface is an easily reachable feature that is accessed by pressing z while on the 2D tile map and the navigating to the save button. Furthermore, to load the saved file simply navigate to the SRS 3.1.6 Tactical Planning Interface and select the “load game” button with x.
-
-v. Game movement/ action
+iv. Game movement/ action
 Once the user has actually selected a 2D tile map the game will begin. This stage of the game is fundamentally made up of unit movement and unit action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting selecting the command attack. 
 
 
