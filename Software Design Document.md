@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.7
+Version 1.8
 
 ###Table of Contents
 Table of Contents  
@@ -14,8 +14,14 @@ Revision History
     1. Purpose
     2. Intended Audience
     3. Scope
+    4. Design Summary
 2. Main system architecture (Logical view)
-3. Sub-systems architecture   
+    1. Overview
+    2. Navigation
+    3. Skirmish/ Campaign function
+    4. Saved Game/ Load game
+    5. Game movement/ action
+3. Technical system architecture   
 4. Rational for each architectural choice    
 5. Development view
 6. Physical view
@@ -38,7 +44,8 @@ Revision History
 |Daniel LaBorde|11/1|Minor fixes and added description in section 6 |1.4|
 |Christopher Gore|11/1|Addition of description in section 5 and preliminary formatting in section 8|1.5|
 |Christopher Gore|11/1|Initial entry into User Interface and updated Table of Contents|1.6|
-|Christopher Gore|11/1|Added the user interface diagram|1.7|
+|Christopher Gore & Stephen Harb|11/1|Added the user interface diagram|1.7|
+|Mason Meredith|11/2|Initial entry into Main system architecture added 1.4|1.8|
 
 ###1. Introduction
 ####i. Purpose
@@ -49,29 +56,28 @@ The following document is intended for reading for team members, LSU CSC student
 ####iii. Scope
 Sub-Dolphin Machine is based on turn based tactical full-awareness games in the vein of chess and Square Enix’s Final Fantasy Tactics Advance as well as other games within the genre. The games main artistic contribution to the genre is the addition of armed dolphins. The game will involve deep turn based strategy and player advancement as well as the ability to control the in-game avatars, which will be dolphins with cannons on them. The player will progress through different levels of the game, level up, and unlock new items for customization along the way.
 
-1.4 Design summary 
+####iv. Design summary 
 	At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the storage, pre game maneuvering, and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
 
-
-2. Conceptual System Architecture 
-2.1 Overview  
+###2. Main system architecture (Logical view)
+i. Overview  
 The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish and campaign menu.  These two menus also allow for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish and campaign menu also hold the difficulty level of the game and a possible saved game. These two features are introduced for a those unable to play the game for continued game enjoyment as well as ensuring that progress in the game is not lost. The 2D tile map is reached through either the campaign menu, or the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
 
-2.2 Navigation 
+ii. Navigation 
 	The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
 
-2.3 Skirmish/ Campaign function
+iii. Skirmish/ Campaign function
 	This might appear to be a broad category, but in reality it underlines a straightforward difference. On the main menu the user will chose either a Campaign or a Skirmish mode. Put simply there will be two campaigns one being the dolphins(easy), and the other being the sharks(hard). The sharks are set at a disadvantage because you will start the game as sharks where the dolphin campaigns ends. So, as the dolphin campaign starts easy and gets slowly harder, the shark campaign goes from hard to harder. Thus, if the user chooses the sharks they will end up with a highly difficult game but if user pick dolphins the game will be easy. Meanwhile, the skirmish mode will be exactly as stated in the SRS document under External Interface Requirements at Tactical Planning Interface 3.1.6. So, skirmish mode will have a simple drop down with difficulty, and and a simple choice of dolphin or sharks with a preordained map. 
 
 
-2.4 Saved Game/ Load game
+iv. Saved Game/ Load game
 	The saved/ load game feature of the game is meant to be a progress-retaining feature. The game may take more time than can be completed in one sitting, so the save feature located in the SRS 3.1.7 Systems Option Interface is an easily reachable feature that is accessed by pressing z while on the 2D tile map and the navigating to the save button. Furthermore, to load the saved file simply navigate to the SRS 3.1.6 Tactical Planning Interface and select the “load game” button with x.
 
-2.5 Game movement/ action
+v. Game movement/ action
 Once the user has actually selected a 2D tile map the game will begin. This stage of the game is fundamentally made up of unit movement and unit action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting selecting the command attack. 
 
-###2. Main system architecture (Logical view)
-###3. Sub-systems architecture 
+
+###3. Technical system architecture 
 ###4. Rational for each architectural choice    
 ###5. Development view
 ![developmentdiagram](https://cloud.githubusercontent.com/assets/22534157/19913109/990cb0ea-a06d-11e6-907c-7ffbb4abeff4.png)
