@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.6
+Version 1.7
 
 ###Table of Contents
 Table of Contents  
@@ -38,6 +38,7 @@ Revision History
 |Daniel LaBorde|11/1|Minor fixes and added description in section 6 |1.4|
 |Christopher Gore|11/1|Addition of description in section 5 and preliminary formatting in section 8|1.5|
 |Christopher Gore|11/1|Initial entry into User Interface and updated Table of Contents|1.6|
+|Christopher Gore|11/1|Added the user interface diagram|1.7|
 
 ###1. Introduction
 ####i. Purpose
@@ -71,6 +72,8 @@ The game sound will be handled by:
 ###10. User interfaces
 The following user interfaces are planned; menu/selection interface, tactical planning interface, play interface, and system options interface. 
 Each interface will work as such:
+
+![uidiagram](https://cloud.githubusercontent.com/assets/22534157/19916626/cb7c2ae4-a089-11e6-90dc-a7ebc9f5d121.png)
 
 ####i. Menu Interface
 The main menu will require three basic “buttons.” The first button will be a link to shut down the game. The second button allows the user to view the tactical planning interface (campaign). The last button leads to the same tactical planning interface but it is (skirmish mode).
