@@ -1,11 +1,10 @@
-
 #Software Design Document
 
 Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.5
+Version 1.6
 
 ###Table of Contents
 Table of Contents  
@@ -24,16 +23,21 @@ Revision History
 8. Work-assignment view
 9. Element catalog
 10. User interfaces
+    1. Menu Interface
+    2. Tactical Planning Interface
+    3. Play Interface
+    4. Systems Options Interface
 
 ###Revision History
 |Name|Date|Reason for Changes|Version|
 |---|---|---|---|
 |Christopher Gore|10/31|Creation of Document|1.0|
 |Christopher Gore|10/31|Initial entries into Introduction and Database Sections|1.1|
-|Daniel LaBorde|11/1|Initial entries into Development View|1.2|
+|Daniel LaBorde|11/1|Initial entry into Development View|1.2|
 |Daniel LaBorde|11/1|Initial entries into Physical View and Element Catalog (view key)|1.3|
 |Daniel LaBorde|11/1|Minor fixes and added description in section 6 |1.4|
 |Christopher Gore|11/1|Addition of description in section 5 and preliminary formatting in section 8|1.5|
+|Christopher Gore|11/1|Initial entry into User Interface and updated Table of Contents|1.6|
 
 ###1. Introduction
 ####i. Purpose
@@ -65,3 +69,17 @@ The game sound will be handled by:
 ###9. Element catalog
 ![elementcatalog](https://cloud.githubusercontent.com/assets/22534157/19913211/7206a266-a06e-11e6-866b-cd8abd39e8aa.png)
 ###10. User interfaces
+The following user interfaces are planned; menu/selection interface, tactical planning interface, play interface, and system options interface. 
+Each interface will work as such:
+
+####i. Menu Interface
+The main menu will require three basic “buttons.” The first button will be a link to shut down the game. The second button allows the user to view the tactical planning interface (campaign). The last button leads to the same tactical planning interface but it is (skirmish mode).
+
+####ii. Tactical Planning Interface
+This interface will have the options to pick either the dolphins or sharks in a drop down menu. These two sides each have certain boons to consider including attributes like attack, defense, or resources. Additionally, the tactical planning interface also allows the user to download previous games into a saved slot or overwrite the one saved slot.  This means that there are two buttons regarding this function one for a new game, and one for a continued game.  Finally, if it is a new game then the difficulty is re-set to either easy or hard with an additional two buttons. 
+
+####iii. Play Interface
+This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly will turn to a new picture. By selecting this unit, the user can either attack (changing the color of the unit background), or defend (changing the color of the unit background). 
+
+####iv. System Options Interface: 
+This interface is a simpler interface that will require only an open menu with an “x” button at the top of the menu, a “save” button, and a “return to game” button.
