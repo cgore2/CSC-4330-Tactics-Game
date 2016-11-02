@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.10
+Version 1.11
 
 ###Table of Contents
 Table of Contents  
@@ -44,9 +44,10 @@ Revision History
 |Christopher Gore|11/1|Addition of description in section 5 and preliminary formatting in section 8|1.5|
 |Christopher Gore|11/1|Initial entry into User Interface and updated Table of Contents|1.6|
 |Christopher Gore & Stephen Harb|11/1|Added the user interface diagram|1.7|
-|Mason Meredith|11/2|Initial entry into Main system architecture added iv to section 1|1.8|
-|Christopher Gore|11/2|Removed section iv. from Main system architecture & minor edits|1.9|
+|Mason Meredith|11/2|Initial entry into Main System Architecture added iv to section 1|1.8|
+|Christopher Gore|11/2|Removed section iv. from Main System Architecture & minor edits|1.9|
 |Stephen Harb|11/2|Removed Section 3 addition |1.10|
+|Christopher Gore|11/2|Initial entry into Work Assignment View section|1.11|
 
 
 ###1. Introduction
@@ -109,10 +110,15 @@ Description: All elements of the game can be accessed through a computer or mobi
 ###7. Database view
 A database will not be implemented in this project.  This section is kept in should the future iterations of this project call for the use of a database.
 ###8. Work-assignment view
-The system logic will be handled by:  
-The User Interface will be handled by:  
-The art assets will be handled by:  
-The game sound will be handled by:  
+All parts of the project will be worked on by all members of the team either as a whole or in pairs.  The reason for this is because the group is using an egoless approach to the games design and input from all members is required before major decisions are made for the project.  
+
+While every member will have input into each part of the game certain sections will be focused on primarily by individuals.  
+
+The system logic will be handled by: Christopher Gore  
+The User Interface will be handled by: Stephen Harb  
+The acquisition of art assets will be handled by: Daniel LaBorde  
+The game sound will be handled by: Mason Meredith
+
 ###9. Element catalog
 ![elementcatalog](https://cloud.githubusercontent.com/assets/22534157/19913211/7206a266-a06e-11e6-866b-cd8abd39e8aa.png)
 ###10. User interfaces
