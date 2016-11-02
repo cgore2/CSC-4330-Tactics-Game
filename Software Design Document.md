@@ -45,7 +45,7 @@ Revision History
 |Christopher Gore|11/1|Addition of description in section 5 and preliminary formatting in section 8|1.5|
 |Christopher Gore|11/1|Initial entry into User Interface and updated Table of Contents|1.6|
 |Christopher Gore & Stephen Harb|11/1|Added the user interface diagram|1.7|
-|Mason Meredith|11/2|Initial entry into Main system architecture added 1.4|1.8|
+|Mason Meredith|11/2|Initial entry into Main system architecture added iv to section 1|1.8|
 
 ###1. Introduction
 ####i. Purpose
