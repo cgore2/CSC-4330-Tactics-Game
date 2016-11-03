@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.18
+Version 1.19
 
 ###Table of Contents
 Table of Contents  
@@ -15,7 +15,7 @@ Revision History
     2. Intended Audience
     3. Scope
     4. Design Summary
-###2. Main system architecture (Logical view)
+###2. Game system architecture (Logical view)
     1. Overview
     2. Game Maps 
     3. Sprites
@@ -60,6 +60,7 @@ Revision History
 |Stephen Harb|11/2|Addition of Section 4 and rewrtite|1.16|
 |Christopher Gore|11/2|Rewrite of Table of Contents & minor edits throughout document|1.17|
 |Daniel LaBorde|11/2|Added the logical view diagram to section 2|1.18|
+|Christopher Gore|11/2|Major rewrite of Work Assignment section & reassignment of section numbers|1.19|
 
 ###1. Introduction
 ####1.1. Purpose
@@ -124,62 +125,13 @@ All parts of the project will be worked on by all members of the team either as 
 While every member will have input into each part of the game certain sections will be focused on primarily by individuals.  
 
 Team Responsibilities:  
-Design:  
+Chris: Secretarial duties including taking meeting notes, managing documentation, communicating with the client, and assisting in coding the games logic.
 
-1. Documentarian: Mason  
-    a. -Document editing
-2. Secretary: Chris
-3. Acquisitions: Stephen  
-    a. -Concept art  
-    b. -Acquiring design  
-    c. -Flow charts  
-4. Research: Daniel  
-    a. -Design research  
-    b. -Engineering
+Daniel: Research into the assets needed for the game, management of media and functionality of the GUI, and error control.
 
-Development:  
+Mason: Worked on document editing and troubleshooting as quality assurance on finished product.
 
-1. Implementation manager- Mason  
-    a. Assure the team follows the Flow-charts  
-2. Artistic/Assets manager- Daniel  
-    a. Management of media  
-    b. Assurance of the functionality of the GUI  
-3. Secretarial manager- Chis  
-    a. Take meeting notes  
-    b. Report meeting minutes  
-    c. Manage deadlines  
-    d. Mange Document and deliverable editing  
-    e. Communicating to the client  
-4. Management Liaison- Stephen  
-    a. Communicates between sections  
-    b. Assure interface between team  
-    c. Integration Control  
-
-Coding:  
-
-1. System Logic: Chris 
-2. User Interface: Stephen
-3. Art assets: Daniel 
-4. Game Sound: Mason
-
-Testing:
-
-1. Secretarial: Chis  
-    a. Take meeting notes  
-    b. Report meeting minutes  
-    c. Manage deadlines  
-    d. Mange Document and deliverable editing  
-    e. Communicating to the client  
-2. Error Control: Daniel  
-    a. Report found errors in the system  
-    b. Communicate errors where errors originate  
-3. Revision: Stephen  
-    a. Handle code revisions  
-    b. Mange error revision ideas  
-4. Troubleshooter/Quality Assurance: Mason  
-    a. Troubleshoot the platform  
-    b. Mange playability of finished product
-
+Stephen: acquisition of art assets, communication between team members, and error checking.
 
 ###6. User interfaces
 The following user interfaces are planned; menu/selection interface, tactical planning interface, play interface, and system options interface. 
