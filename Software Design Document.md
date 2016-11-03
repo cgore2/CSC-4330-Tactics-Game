@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.19
+Version 1.21
 
 ###Table of Contents
 Table of Contents  
@@ -31,8 +31,10 @@ Revision History
     1. Overview
     2. Source Code Organization
     3. Programming Methodology and Commenting
-###5. Work-assignment view
-###6. User interfaces
+###5. Physical view
+###6. Database view
+###7. Work-assignment view
+###8. User interfaces
     1. Menu Interface
     2. Tactical Planning Interface
     3. Play Interface
@@ -62,6 +64,7 @@ Revision History
 |Daniel LaBorde|11/2|Added the logical view diagram to section 2|1.18|
 |Christopher Gore|11/2|Major rewrite of Work Assignment section & reassignment of section numbers|1.19|
 |Mason Meredith|11/2| Editting 6 |1.20|
+|Christopher Gore|11/2| Minor edits & reintroduction of Physical and Database sections |1.21|
 
 ###1. Introduction
 ####1.1. Purpose
@@ -120,7 +123,11 @@ The code shall be run through a play class, SDMC_RUN.cs. This class shall be ass
 ####4.3 Programming Methodology and Commenting
 Software shall be tested at each change to the system, as well as version incrementing, to prevent errors from backlogging. The software shall be heavily modulated such that any error within any header or function can be solved without significant restructuring to other pieces of the code. Comments shall include Javadoc commenting as well as line-by-line code explanation. 
 
-###5. Work-assignment view
+###5. Physical View
+The system will use the standard components used for a desktop or laptop including a keyboard and mouse/mousepad as the input devices.
+###6. Database View
+The project will not require that a database be implemented.
+###7. Work-assignment view
 All parts of the project will be worked on by all members of the team either as a whole or in pairs.  The reason for this is because the group is using an egoless approach to the games design and input from all members is required before major decisions are made for the project.  
 
 While every member will have input into each part of the game certain sections will be focused on primarily by individuals.  
@@ -134,20 +141,20 @@ Mason: Worked on document editing and troubleshooting as quality assurance on fi
 
 Stephen: acquisition of art assets, communication between team members, and error checking.
 
-###6. User interfaces
+###8. User interfaces
 The following user interfaces are planned; menu/selection interface, tactical planning interface, play interface, and system options interface. 
 Each interface will work as such:
 
 ![uidiagram](https://cloud.githubusercontent.com/assets/22534157/19916626/cb7c2ae4-a089-11e6-90dc-a7ebc9f5d121.png)
 
-####6.1 Menu Interface
+####8.1 Menu Interface
 The Menu interface is described in 2.5 and 3.5. The interface allows the player to control and select what level the player will play and enter setting controls. 
 
-####6.2 Level Selection Interface
+####8.2 Level Selection Interface
 The Level Selection Interface is the interface in which you select a specific map option. There will be numerous pre-created maps that offer a variety of strategic options and gameplay. Through this variety the user will be able to challenge themselves with different types of strategy. The levels with include wildly different types of terrain, and units present. 
 
-####6.3 Tactical Planning Interface
+####8.3 Tactical Planning Interface
 This interface will have the options to pick either the dolphins or sharks in a drop down menu. These two sides each have certain boons to consider including attributes like attack, and defense 
 
-####6.4 Play Interface
+####8.4 Play Interface
 This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly unit will set up an option to attack. By selecting this unit the user can attack.
