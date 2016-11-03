@@ -10,24 +10,24 @@ Version 1.12
 Table of Contents  
 Revision History
 
-1. Introduction
+###1. Introduction
     1. Purpose
     2. Intended Audience
     3. Scope
     4. Design Summary
-2. Main system architecture (Logical view)
+###2. Main system architecture (Logical view)
     1. Overview
     2. Navigation
     3. Skirmish/ Campaign function
     4. Game movement/ action
-3. Technical system architecture   
-4. Rational for each architectural choice    
-5. Development view
-6. Physical view
-7. Database view
-8. Work-assignment view
-9. Element catalog
-10. User interfaces
+###3. Technical system architecture   
+###4. Rational for each architectural choice    
+###5. Development view
+###6. Physical view
+###7. Database view
+###8. Work-assignment view
+###9. Element catalog
+###10. User interfaces
     1. Menu Interface
     2. Tactical Planning Interface
     3. Play Interface
@@ -52,15 +52,15 @@ Revision History
 
 
 ###1. Introduction
-####i. Purpose
+####1.1. Purpose
 Team [SDCM] shall develop a tactical game based for the Windows pc. This project shall undergo a full project life-cycle, including gameplay testing. The game shall consist of player elements (Dolphins) and conflict elements (Sharks) that involve high-strategy and tactical decision making in a turn-based environment. Players shall be able to make decisions which effect gameplay in such a way that proper decisions shall lead to victory in the game. The game may include both computer vs player and player vs player gameplay, but not necessarily both. The game shall be called Sub-Dolphin Machine Cannon, or SDMC, which shares an acronym with the team name SDMC or Software Develop Machine Creation.
 
-####ii. Intended Audience
+####1.2. Intended Audience
 The following document is intended for reading for team members, LSU CSC students and LSU CSC staff. The document is organized around user experience development.
-####iii. Scope
+####1.3. Scope
 Sub-Dolphin Machine is based on turn based tactical full-awareness games in the vein of chess and Square Enix’s Final Fantasy Tactics Advance as well as other games within the genre. The games main artistic contribution to the genre is the addition of armed dolphins. The game will involve deep turn based strategy and player advancement as well as the ability to control the in-game avatars, which will be dolphins with cannons on them. The player will progress through different levels of the game, level up, and unlock new items for customization along the way.
 
-####iv. Design summary
+####1.4. Design summary
 At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the storage, pre game maneuvering, and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
 
 ###2. Main system architecture (Logical view)
@@ -88,19 +88,19 @@ Once the user has actually selected a 2D tile map the game will begin. This stag
 
 ###3. Technical system architecture 
 
-3.1. Overview
+####3.1. Overview
 The game needs to be designed with user tactical ability as the focus. The system architecture shall be modulated into the game play engine, the player engine, the enemy engine, GUI, and artistic assets. The player engine inherits the gameplay engine The game is focused around the interaction with the player and enemy engine. The enemy engine inherits the abilities of the player engine, and includes an automated choice system which makes tactical decisions. The GUI shall include the menu and the modes of play.  Each technical system works with each other throughout operation of the game. The player engine, which includes control of units, control within the menu, selection of menu and options, and tactical planning control is the primary interface engine. The secondary interface engine is the GUI which shall render the screen and handle the artistic assets. The technical system shall include control and interface of the game maps and play maps. Inclusion of sprites on game screen and control of them. Player control shall dictate player owned sprites and shall also influence the menu interface. Victory conditions will be a method in the GUI, which will show that the player has won the level, and returns player to the main menu.
 
-3.2 Game Maps
+####3.2 Game Maps
 Game maps are an element of the game play engine. The game maps shall run internally and be how the game interacts with the environment, as well as recording and manipulating the elements for GUI to control. Game maps shall be loaded from an assets folder and the elements on the page shall be interfaced with at runtime and not in preset conditions. 
 
-3.3 Sprites
+####3.3 Sprites
 Sprites are controlled by the engines. Sprites shall be held in an assets folder and rendered at runtime of the game after the player selects what units the team requires for the tactical play. Each sprite shall be handled by the GUI and manipulated by the appropriate engine. 
 
-3.4 Player Control
+####3.4 Player Control
 Player control is dictated by player engine; enemy player control is dictated by the enemy player engine. Player control is used to select from the menu, control unites, and select units for a tactical level. 
 
-3.5 Menu Interface
+####3.5 Menu Interface
 The menu interface is only controlled by the player engine and has elements controlled by the GUI. The menu interface has branching paths, and a menu screen, which shall be an artistic asset held in the assets folder which will be rendered at runtime of the game. 
 
 
