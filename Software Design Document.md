@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.21
+Version 2.0
 
 ###Table of Contents
 Table of Contents  
@@ -65,6 +65,7 @@ Revision History
 |Christopher Gore|11/2|Major rewrite of Work Assignment section & reassignment of section numbers|1.19|
 |Mason Meredith|11/2| Editting 6 |1.20|
 |Christopher Gore|11/2| Minor edits & reintroduction of Physical and Database sections |1.21|
+|Mason Meredith,Christopher Gore,Stephen Harb,Daniel LaBorde|11/2| Document Editting |2.0|
 
 ###1. Introduction
 ####1.1. Purpose
@@ -81,21 +82,21 @@ At this point in time the game Sub dolphin machine cannon has been defined as a 
 
 ###2. Game System architecture 
 ####2.1 Overview  
-The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish menu. This menus allow for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish menu also hold the difficulty level of the game which was introduced newer players unfamiliar with the games mechanics. The 2D tile map is reached through the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
+The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish menu. This menu allows for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish menu also holds the difficulty level of the game which was introduced newer players unfamiliar with the games mechanics. The 2D tile map is reached through the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
 
 ![logicview](https://cloud.githubusercontent.com/assets/22534157/19952915/bc883ca0-a136-11e6-91b6-672f32181d97.png)
 
 ####2.2 Game Maps  
-The Game Maps cannot be a blank plain, thus each tile in the maps holds a special significants. The tiles hold a cost for moment, and this encourages careful planning for sprite moment. The additonal layer of strategy is furthered through the unique tiles like forests and grasslands. Further more certain tiles can be impassable as well. For further details see 2.3 sprites. 
+The Game Maps cannot be a blank plain, thus each tile in the maps holds a special significance. The tiles hold a cost for moment, and this encourages careful planning for sprite moment. The additional layer of strategy is furthered through the unique tiles like forests and grasslands. Furthermore, certain tiles can be impassable as well. For further details, see 2.3 sprites. 
 
 ####2.3 Sprites  
-This stage of the game is fundamentally made up of sprite movement and action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting selecting the command attack. Thus, the strategic aspect of the game is furthered through careful planning of unit placement. 
+This stage of the game is fundamentally made up of sprite movement and action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting the command attack. Thus, the strategic aspect of the game is furthered through careful planning of unit placement. 
 
 ####2.4 Player Control  
-The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
+The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard, the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally, the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
 
 ####2.5 Menu Interface   
-The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons inculude an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of(dolphins or sharks). Finally The actual game is made up of a 2D tile map. 
+The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons include an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of (dolphins or sharks). Finally, the actual game is made up of a 2D tile map. 
 
 ###3. Technical system architecture 
 ####3.1. Overview
@@ -157,4 +158,4 @@ The Level Selection Interface is the interface in which you select a specific ma
 This interface will have the options to pick either the dolphins or sharks in a drop down menu. These two sides each have certain boons to consider including attributes like attack, and defense 
 
 ####8.4 Play Interface
-This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly unit will set up an option to attack. By selecting this unit the user can attack.
+This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly unit will set up an option to attack. By selecting this unit, the user can attack.
