@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.11
+Version 1.12
 
 ###Table of Contents
 Table of Contents  
@@ -46,8 +46,9 @@ Revision History
 |Christopher Gore & Stephen Harb|11/1|Added the user interface diagram|1.7|
 |Mason Meredith|11/2|Initial entry into Main System Architecture added iv to section 1|1.8|
 |Christopher Gore|11/2|Removed section iv. from Main System Architecture & minor edits|1.9|
-|Stephen Harb|11/2|Removed Section 3 addition |1.10|
+|Stephen Harb|11/2|Section 3 addition |1.10|
 |Christopher Gore|11/2|Initial entry into Work Assignment View section|1.11|
+|Stephen Harb|11/2|Full Rewrite of Section 3 |1.12|
 
 
 ###1. Introduction
@@ -86,17 +87,22 @@ Once the user has actually selected a 2D tile map the game will begin. This stag
 
 
 ###3. Technical system architecture 
+
 3.1. Overview
-The game needs to be designed with user tactical ability as the focus. The system architecture shall be modulated into the player engine, the enemy engine, GUI, , and artistic assets. The game is focused around the interaction with the player and enemy engine. The enemy engine inherits the abilities of the player engine, and includes an automated choice system which makes tactical decisions. The GUI shall include the menu and the modes of play. 
+The game needs to be designed with user tactical ability as the focus. The system architecture shall be modulated into the game play engine, the player engine, the enemy engine, GUI, and artistic assets. The player engine inherits the gameplay engine The game is focused around the interaction with the player and enemy engine. The enemy engine inherits the abilities of the player engine, and includes an automated choice system which makes tactical decisions. The GUI shall include the menu and the modes of play.  Each technical system works with each other throughout operation of the game. The player engine, which includes control of units, control within the menu, selection of menu and options, and tactical planning control is the primary interface engine. The secondary interface engine is the GUI which shall render the screen and handle the artistic assets. The technical system shall include control and interface of the game maps and play maps. Inclusion of sprites on game screen and control of them. Player control shall dictate player owned sprites and shall also influence the menu interface. Victory conditions will be a method in the GUI, which will show that the player has won the level, and returns player to the main menu.
 
-3.2. Navigation
-Navigation shall be a component of the player engine, which will then be extended to the GUI. The navigation subcomponent is responsible for control of certain elements within the GUI which then transfer information back to the player engine. This facilitates game play.
+3.2 Game Maps
+Game maps are an element of the game play engine. The game maps shall run internally and be how the game interacts with the environment, as well as recording and manipulating the elements for GUI to control. Game maps shall be loaded from an assets folder and the elements on the page shall be interfaced with at runtime and not in preset conditions. 
 
-3.3 Skirmish
-The skirmish mode shall be the main mode of play. This mode is played through the GUI. The mode utilizes the artistic assets and manipulate them through the player and enemy engines. 
+3.3 Sprites
+Sprites are controlled by the engines. Sprites shall be held in an assets folder and rendered at runtime of the game after the player selects what units the team requires for the tactical play. Each sprite shall be handled by the GUI and manipulated by the appropriate engine. 
 
-3.4 Game Movement
-Selected units can be moved, controlled and manipulated through the player engine. This change is then shown on the GUI. Unites that defeat another unit score points for their controller, unites that are defeated are removed from the screen and is recorded as such.
+3.4 Player Control
+Player control is dictated by player engine; enemy player control is dictated by the enemy player engine. Player control is used to select from the menu, control unites, and select units for a tactical level. 
+
+3.5 Menu Interface
+The menu interface is only controlled by the player engine and has elements controlled by the GUI. The menu interface has branching paths, and a menu screen, which shall be an artistic asset held in the assets folder which will be rendered at runtime of the game. 
+
 
 ###4. Rational for each architectural choice    
 ###5. Development view
