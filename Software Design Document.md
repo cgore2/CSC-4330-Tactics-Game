@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 2.1
+Version 2.2
 
 ###Table of Contents
 Table of Contents  
