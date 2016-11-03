@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 2.0
+Version 2.1
 
 ###Table of Contents
 Table of Contents  
@@ -66,6 +66,9 @@ Revision History
 |Mason Meredith|11/2| Editting 6 |1.20|
 |Christopher Gore|11/2| Minor edits & reintroduction of Physical and Database sections |1.21|
 |Mason Meredith, Christopher Gore, Stephen Harb, & Daniel LaBorde|11/2| Document Editting |2.0|
+|Daniel LaBorde|11/2|Added development view diagram and sample dolphin sprite |2.1|
+
+
 
 ###1. Introduction
 ####1.1. Purpose
@@ -92,6 +95,10 @@ The Game Maps cannot be a blank plain, thus each tile in the maps holds a specia
 ####2.3 Sprites  
 This stage of the game is fundamentally made up of sprite movement and action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting the command attack. Thus, the strategic aspect of the game is furthered through careful planning of unit placement. 
 
+Sample sprite:
+
+![dolphinfinal](https://cloud.githubusercontent.com/assets/22534157/19953583/905bc2f8-a13d-11e6-8757-7629e26644df.png)
+
 ####2.4 Player Control  
 The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard, the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally, the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
 
@@ -117,6 +124,8 @@ The menu interface is only controlled by the player engine and has elements cont
 ###4. Development view
 ####4.1 Overview
 The game will be built using the Unity game development engine and programmed using the C# programming language. The game shall be designed modularly with a spiral programming method. Collaboration shall mainly be through github. Assets shall be saved in an included folder. Each component of the software shall be saved within a directory for code control on unity.  Unity shall allow code from the git repository to be pushed to the Unity design folders. This allows testing of code to be smooth and without undue error.
+
+![developmentview](https://cloud.githubusercontent.com/assets/22534157/19953578/8499359a-a13d-11e6-88e2-750d3a16da87.png)
 
 ####4.2 Source Code Organization 
 The code shall be run through a play class, SDMC_RUN.cs. This class shall be associated with one main classes SDMC.cs which shall handle the game engine, the game engine is broken down into Player.cs, Enemy_Player.cs, Menu.cs, Map.h, Sprite.h, Audio.h. The play class runs the game and acts as a virtual wrapper for the rest of the code. 
