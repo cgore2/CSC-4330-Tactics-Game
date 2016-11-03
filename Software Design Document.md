@@ -65,7 +65,7 @@ Revision History
 |Christopher Gore|11/2|Major rewrite of Work Assignment section & reassignment of section numbers|1.19|
 |Mason Meredith|11/2| Editting 6 |1.20|
 |Christopher Gore|11/2| Minor edits & reintroduction of Physical and Database sections |1.21|
-|Mason Meredith,Christopher Gore,Stephen Harb,Daniel LaBorde|11/2| Document Editting |2.0|
+|Mason Meredith, Christopher Gore, Stephen Harb, & Daniel LaBorde|11/2| Document Editting |2.0|
 
 ###1. Introduction
 ####1.1. Purpose
