@@ -140,7 +140,7 @@ Daniel: Research into the assets needed for the game, management of media and fu
 
 Mason: Worked on document editing and troubleshooting as quality assurance on finished product.
 
-Stephen: acquisition of art assets, communication between team members, and error checking.
+Stephen: Acquisition of art assets, communication between team members, and error checking.
 
 ###8. User interfaces
 The following user interfaces are planned; menu/selection interface, tactical planning interface, play interface, and system options interface. 
