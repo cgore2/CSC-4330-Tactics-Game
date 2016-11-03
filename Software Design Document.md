@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.13
+Version 1.16
 
 ###Table of Contents
 Table of Contents  
@@ -49,8 +49,9 @@ Revision History
 |Christopher Gore|11/2|Initial entry into Work Assignment View section|1.11|
 |Stephen Harb|11/2|Full Rewrite of Section 3 |1.12|
 |Stephen Harb|11/2|Change and reformat of section 10 |1.13|
-|Stephen Harb|11/2|Rewrite of section 7|1.14|
+|Christopher Gore|11/2|Rewrite of section 7|1.14|
 |Mason Meredith|11/2| Editting 2 |1.15|
+|Stephen Harb|11/2|Addition of Section 4 and rewrtite|1.16|
 
 ###1. Introduction
 ####1.1. Purpose
@@ -84,13 +85,17 @@ Player control is dictated by player engine; enemy player control is dictated by
 ####3.5 Menu Interface
 The menu interface is only controlled by the player engine and has elements controlled by the GUI. The menu interface has branching paths, and a menu screen, which shall be an artistic asset held in the assets folder which will be rendered at runtime of the game. 
 
-
 ###4. Development view
-![developmentdiagram](https://cloud.githubusercontent.com/assets/22534157/19913109/990cb0ea-a06d-11e6-907c-7ffbb4abeff4.png)
+####4.1 Overview
+The game will be built using the Unity game development engine and programmed using the C# programming language. The game shall be designed modularly with a spiral programming method. Collaboration shall mainly be through github. Assets shall be saved in an included folder. Each component of the software shall be saved within a directory for code control on unity.  Unity shall allow code from the git repository to be pushed to the Unity design folders. This allows testing of code to be smooth and without undue error.
 
-The game will be built using the Unity game development engine and programmed using the C# programming language. 
-###5. Physical view
-![physicalview](https://cloud.githubusercontent.com/assets/22534157/19913205/69c45eea-a06e-11e6-8761-6b277f97ec00.png)
+####4.2 Source Code Organization 
+The code shall be run through a play class, SDMC_RUN.cs. This class shall be associated with one main classes SDMC.cs which shall handle the game engine, the game engine is broken down into Player.cs, Enemy_Player.cs, Menu.cs, Map.h, Sprite.h, Audio.h. The play class runs the game and acts as a virtual wrapper for the rest of the code. 
+
+####4.3 Programming Methodology and Commenting
+Software shall be tested at each change to the system, as well as version incrementing, to prevent errors from backlogging. The software shall be heavily modulated such that any error within any header or function can be solved without significant restructuring to other pieces of the code. Comments shall include Javadoc commenting as well as line-by-line code explanation. 
+
+
 
 Description: All elements of the game can be accessed through a computer or mobile device. The device then interacts with the LAN server in order to connect with other players. No databases or other servers are needed. 
 ###6. Database view
