@@ -67,7 +67,7 @@ Revision History
 |Christopher Gore|11/2| Minor edits & reintroduction of Physical and Database sections |1.21|
 |Mason Meredith, Christopher Gore, Stephen Harb, & Daniel LaBorde|11/2| Document Editting |2.0|
 |Daniel LaBorde|11/2|Added development view diagram and sample dolphin sprite |2.1|
-
+|Mason Meredith|11/2|Touch up in 1 and 2 to ensure no contradictions |2.2|
 
 
 ###1. Introduction
@@ -81,7 +81,7 @@ The following document is intended for reading for team members, LSU CSC student
 Sub-Dolphin Machine is based on turn based tactical full-awareness games in the vein of chess and Square Enix’s Final Fantasy Tactics Advance as well as other games within the genre. The games main artistic contribution to the genre is the addition of armed dolphins. The game will involve deep turn based strategy and player advancement as well as the ability to control the in-game avatars, which will be dolphins with cannons on them. The player will progress through different levels of the game, level up, and unlock new items for customization along the way.
 
 ####1.4. Design summary
-At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the storage, pre game maneuvering, and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
+At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the pre game maneuvering and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
 
 ###2. Game System architecture 
 ####2.1 Overview  
@@ -90,10 +90,10 @@ The SDMC game is at its core a simple turn-based strategy game of the same type 
 ![logicview](https://cloud.githubusercontent.com/assets/22534157/19952915/bc883ca0-a136-11e6-91b6-672f32181d97.png)
 
 ####2.2 Game Maps  
-The Game Maps cannot be a blank plain, thus each tile in the maps holds a special significance. The tiles hold a cost for moment, and this encourages careful planning for sprite moment. The additional layer of strategy is furthered through the unique tiles like forests and grasslands. Furthermore, certain tiles can be impassable as well. For further details, see 2.3 sprites. 
+The Game Maps cannot be a blank plain, thus each tile in the maps holds a special significance. The tiles hold a cost for movement, and this encourages careful planning for sprite movement. The additional layer of strategy is furthered through the unique tiles like forests and grasslands. Furthermore, certain tiles can be impassable as well like rivers. For further details, see 2.3 sprites. 
 
 ####2.3 Sprites  
-This stage of the game is fundamentally made up of sprite movement and action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting the command attack. Thus, the strategic aspect of the game is furthered through careful planning of unit placement. 
+This stage of the game is fundamentally made up of sprite movement and action. Unit movement is dictate by tile type and unit type. Each unit holds stats like a movement number, attack number, and defense number. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or a non factor for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting the command attack. Thus, the strategic aspect of the game is furthered through careful planning of unit placement. The sprites themselves are separated into two base sprites of dolphins and sharks. Then various different weapons are added to the base sprites. 
 
 Sample sprite:
 
@@ -103,7 +103,7 @@ Sample sprite:
 The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard, the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally, the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
 
 ####2.5 Menu Interface   
-The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons include an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of (dolphins or sharks). Finally, the actual game is made up of a 2D tile map. 
+The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons include an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of (dolphins or sharks). Finally, the actual game is made up of a 2D tile map which allows the selection, movement, and attacking of and by sprites. 
 
 ###3. Technical system architecture 
 ####3.1. Overview
