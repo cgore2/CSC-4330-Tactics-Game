@@ -17,16 +17,23 @@ Revision History
     4. Design Summary
 ###2. Main system architecture (Logical view)
     1. Overview
-    2. Navigation
-    3. Skirmish/ Campaign function
-    4. Game movement/ action
+    2. Game Maps 
+    3. Sprites
+    4. Player Control 
+    5. Menu Interface
 ###3. Technical system architecture   
+    1. Overview
+    2. Game Maps 
+    3. Sprites
+    4. Player Control 
+    5. Menu Interface
 ###4. Development view
-###5. Physical view
-###6. Database view
-###7. Work-assignment view
-###8. Element catalog
-###9. User interfaces
+    1. Overview
+    2. Source Code Organization
+    3. Programming Methodology and Commenting
+###5. Work-assignment view
+###6. Element catalog
+###7. User interfaces
     1. Menu Interface
     2. Tactical Planning Interface
     3. Play Interface
@@ -52,6 +59,7 @@ Revision History
 |Christopher Gore|11/2|Rewrite of section 7|1.14|
 |Mason Meredith|11/2| Editting 2 |1.15|
 |Stephen Harb|11/2|Addition of Section 4 and rewrtite|1.16|
+|Christopher Gore|11/2|Rewrite of Table of Contents & minor edits throughout document|1.14|
 
 ###1. Introduction
 ####1.1. Purpose
@@ -80,7 +88,7 @@ This stage of the game is fundamentally made up of sprite movement and action. U
 The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
 
 ####2.5 Menu Interface   
-The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons inculude an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of(dolphins or sharks). Finally The actual game is made up of a 2D tile map. ###3. Technical system architecture
+The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons inculude an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of(dolphins or sharks). Finally The actual game is made up of a 2D tile map. 
 
 ###3. Technical system architecture 
 ####3.1. Overview
@@ -108,12 +116,7 @@ The code shall be run through a play class, SDMC_RUN.cs. This class shall be ass
 ####4.3 Programming Methodology and Commenting
 Software shall be tested at each change to the system, as well as version incrementing, to prevent errors from backlogging. The software shall be heavily modulated such that any error within any header or function can be solved without significant restructuring to other pieces of the code. Comments shall include Javadoc commenting as well as line-by-line code explanation. 
 
-
-
-Description: All elements of the game can be accessed through a computer or mobile device. The device then interacts with the LAN server in order to connect with other players. No databases or other servers are needed. 
-###6. Database view
-A database will not be implemented in this project.  This section is kept in should the future iterations of this project call for the use of a database.
-###7. Work-assignment view
+###5. Work-assignment view
 All parts of the project will be worked on by all members of the team either as a whole or in pairs.  The reason for this is because the group is using an egoless approach to the games design and input from all members is required before major decisions are made for the project.  
 
 While every member will have input into each part of the game certain sections will be focused on primarily by individuals.  
@@ -176,19 +179,19 @@ Testing:
     b. Mange playability of finished product
 
 
-###8. Element catalog
+###6. Element catalog
 ![elementcatalog](https://cloud.githubusercontent.com/assets/22534157/19913211/7206a266-a06e-11e6-866b-cd8abd39e8aa.png)
-###9. User interfaces
+###7. User interfaces
 The following user interfaces are planned; menu/selection interface, tactical planning interface, play interface, and system options interface. 
 Each interface will work as such:
 
 ![uidiagram](https://cloud.githubusercontent.com/assets/22534157/19916626/cb7c2ae4-a089-11e6-90dc-a7ebc9f5d121.png)
 
-####9.1 Menu Interface
+####7.1 Menu Interface
 The Menu interface is described in 2.5 and 3.5. The interface allows the player to control and select what level the player will play and enter setting controls. 
 
-####9.2 Tactical Planning Interface
+####7.2 Tactical Planning Interface
 This interface will have the options to pick either the dolphins or sharks in a drop down menu. These two sides each have certain boons to consider including attributes like attack, defense, or resources. Additionally, the tactical planning interface also allows the user to download previous games into a saved slot or overwrite the one saved slot.  This means that there are two buttons regarding this function one for a new game, and one for a continued game.  Finally, if it is a new game then the difficulty is re-set to either easy or hard with an additional two buttons. 
 
-####9.3 Play Interface
+####7.3 Play Interface
 This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly will turn to a new picture. By selecting this unit, the user can either attack (changing the color of the unit background), or defend (changing the color of the unit background). 
