@@ -61,6 +61,7 @@ Revision History
 |Christopher Gore|11/2|Rewrite of Table of Contents & minor edits throughout document|1.17|
 |Daniel LaBorde|11/2|Added the logical view diagram to section 2|1.18|
 |Christopher Gore|11/2|Major rewrite of Work Assignment section & reassignment of section numbers|1.19|
+|Mason Meredith|11/2| Editting 6 |1.20|
 
 ###1. Introduction
 ####1.1. Purpose
@@ -142,8 +143,11 @@ Each interface will work as such:
 ####6.1 Menu Interface
 The Menu interface is described in 2.5 and 3.5. The interface allows the player to control and select what level the player will play and enter setting controls. 
 
-####6.2 Tactical Planning Interface
-This interface will have the options to pick either the dolphins or sharks in a drop down menu. These two sides each have certain boons to consider including attributes like attack, defense, or resources. Additionally, the tactical planning interface also allows the user to download previous games into a saved slot or overwrite the one saved slot.  This means that there are two buttons regarding this function one for a new game, and one for a continued game.  Finally, if it is a new game then the difficulty is re-set to either easy or hard with an additional two buttons. 
+####6.2 Level Selection Interface
+The Level Selection Interface is the interface in which you select a specific map option. There will be numerous pre-created maps that offer a variety of strategic options and gameplay. Through this variety the user will be able to challenge themselves with different types of strategy. The levels with include wildly different types of terrain, and units present. 
 
-####6.3 Play Interface
-This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly will turn to a new picture. By selecting this unit, the user can either attack (changing the color of the unit background), or defend (changing the color of the unit background). 
+####6.3 Tactical Planning Interface
+This interface will have the options to pick either the dolphins or sharks in a drop down menu. These two sides each have certain boons to consider including attributes like attack, and defense 
+
+####6.4 Play Interface
+This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly unit will set up an option to attack. By selecting this unit the user can attack.
