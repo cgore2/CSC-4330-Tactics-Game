@@ -50,6 +50,7 @@ Revision History
 |Christopher Gore|11/2|Initial entry into Work Assignment View section|1.11|
 |Stephen Harb|11/2|Full Rewrite of Section 3 |1.12|
 |Stephen Harb|11/2|Change and reformat of section 10 |1.13|
+|Mason Meredith|11/2| Editted the section 2|1.14|
 
 
 ###1. Introduction
@@ -67,26 +68,15 @@ At this point in time the game Sub dolphin machine cannon has been defined as a 
 ###2. Main system architecture (Logical view)
 2. Game System architecture
 2.1 Overview
+	The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish menu. This menus allow for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish menu also hold the difficulty level of the game which was introduced newer players unfamiliar with the games mechanics. The 2D tile map is reached through the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
 2.2 Game Maps
-2.3 Play Maps
-2.4 Sprites
-2.5 Player Control
-2.6 Menu Interface
-2.7 Victory Conditions
-
-i. Overview  
-The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish and campaign menu.  These two menus also allow for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish and campaign menu also hold the difficulty level of the game and a possible saved game. These two features are introduced for a those unable to play the game for continued game enjoyment as well as ensuring that progress in the game is not lost. The 2D tile map is reached through either the campaign menu, or the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
-
-ii. Navigation 
+	The Game Maps cannot be a blank plain, thus each tile in the maps holds a special significants. The tiles hold a cost for moment, and this encourages careful planning for sprite moment. The additonal layer of strategy is furthered through the unique tiles like forests and grasslands. Further more certain tiles can be impassable as well. For further details see 2.3 sprites. 
+2.3 Sprites
+	This stage of the game is fundamentally made up of sprite movement and action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting selecting the command attack. Thus, the strategic aspect of the game is furthered through careful planning of unit placement. 
+2.4 Player Control
 	The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
-
-iii. Skirmish/ Campaign function
-	This might appear to be a broad category, but in reality it underlines a straightforward difference. On the main menu the user will chose either a Campaign or a Skirmish mode. Put simply there will be two campaigns one being the dolphins(easy), and the other being the sharks(hard). The sharks are set at a disadvantage because you will start the game as sharks where the dolphin campaigns ends. So, as the dolphin campaign starts easy and gets slowly harder, the shark campaign goes from hard to harder. Thus, if the user chooses the sharks they will end up with a highly difficult game but if user pick dolphins the game will be easy. Meanwhile, the skirmish mode will be exactly as stated in the SRS document under External Interface Requirements at Tactical Planning Interface 3.1.6. So, skirmish mode will have a simple drop down with difficulty, and and a simple choice of dolphin or sharks with a preordained map. 
-
-iv. Game movement/ action
-Once the user has actually selected a 2D tile map the game will begin. This stage of the game is fundamentally made up of unit movement and unit action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting selecting the command attack. 
-
-
+2.5 Menu Interface
+	The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons inculude an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of(dolphins or sharks). Finally The actual game is made up of a 2D tile map. 
 ###3. Technical system architecture 
 
 ####3.1. Overview
