@@ -21,13 +21,12 @@ Revision History
     3. Skirmish/ Campaign function
     4. Game movement/ action
 ###3. Technical system architecture   
-###4. Rational for each architectural choice    
-###5. Development view
-###6. Physical view
-###7. Database view
-###8. Work-assignment view
-###9. Element catalog
-###10. User interfaces
+###4. Development view
+###5. Physical view
+###6. Database view
+###7. Work-assignment view
+###8. Element catalog
+###9. User interfaces
     1. Menu Interface
     2. Tactical Planning Interface
     3. Play Interface
@@ -50,7 +49,7 @@ Revision History
 |Christopher Gore|11/2|Initial entry into Work Assignment View section|1.11|
 |Stephen Harb|11/2|Full Rewrite of Section 3 |1.12|
 |Stephen Harb|11/2|Change and reformat of section 10 |1.13|
-|Mason Meredith|11/2| Editted the section 2|1.14|
+|Stephen Harb|11/2|Rewrite of section 7|1.14|
 
 
 ###1. Introduction
@@ -68,15 +67,26 @@ At this point in time the game Sub dolphin machine cannon has been defined as a 
 ###2. Main system architecture (Logical view)
 2. Game System architecture
 2.1 Overview
-	The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish menu. This menus allow for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish menu also hold the difficulty level of the game which was introduced newer players unfamiliar with the games mechanics. The 2D tile map is reached through the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
 2.2 Game Maps
-	The Game Maps cannot be a blank plain, thus each tile in the maps holds a special significants. The tiles hold a cost for moment, and this encourages careful planning for sprite moment. The additonal layer of strategy is furthered through the unique tiles like forests and grasslands. Further more certain tiles can be impassable as well. For further details see 2.3 sprites. 
-2.3 Sprites
-	This stage of the game is fundamentally made up of sprite movement and action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting selecting the command attack. Thus, the strategic aspect of the game is furthered through careful planning of unit placement. 
-2.4 Player Control
+2.3 Play Maps
+2.4 Sprites
+2.5 Player Control
+2.6 Menu Interface
+2.7 Victory Conditions
+
+i. Overview  
+The SDMC game is at its core a simple turn-based strategy game of the same type as Fire Emblem, or Age of The Empires. The game is focused on giving the user a fun experience in which they have to work moderately hard to achieve the victory scenarios of defeating all the enemy units. The game will be easy to navigate by using the computer keyboard to access various dropdowns and buttons in the 5 menus/interfaces. The Main menu is essentially a stop on the way to the destination of the 2D tile map. The Main menu leads to the skirmish and campaign menu.  These two menus also allow for the unit choice of either sharks or dolphins. This was brought into the game to encourage a sense of overcoming an enemy other than dolphins in the game. The skirmish and campaign menu also hold the difficulty level of the game and a possible saved game. These two features are introduced for a those unable to play the game for continued game enjoyment as well as ensuring that progress in the game is not lost. The 2D tile map is reached through either the campaign menu, or the skirmish menu, and is the main stage of the game with moveable units capable of attack. 
+
+ii. Navigation 
 	The navigation is based on the keyboards inputs from the respective windows computer. The buttons used will be the z, x and arrow buttons of the keyboard to move the selector. By using the keyboard the user can select the dropdown and button boxes available for navigating the game. This allows an easy way to enter and exit the game at any given time. The z acts as a backspace and will access the current menus back button such as shut down in the main menu. Meanwhile the x acts as select. Finally the arrow keys act exactly as expected in that they move up, down, left and right when possible. 
-2.5 Menu Interface
-	The various Interfaces are vital for game navigation. The Main menu is essentially a stop on the way to the destination of the 2D tile map. From the Main menu the buttons inculude an "exit game" button, and a "skirmish" button. Once in the skirmish menu the game allows for the selection of difficulty, and unit types of(dolphins or sharks). Finally The actual game is made up of a 2D tile map. 
+
+iii. Skirmish/ Campaign function
+	This might appear to be a broad category, but in reality it underlines a straightforward difference. On the main menu the user will chose either a Campaign or a Skirmish mode. Put simply there will be two campaigns one being the dolphins(easy), and the other being the sharks(hard). The sharks are set at a disadvantage because you will start the game as sharks where the dolphin campaigns ends. So, as the dolphin campaign starts easy and gets slowly harder, the shark campaign goes from hard to harder. Thus, if the user chooses the sharks they will end up with a highly difficult game but if user pick dolphins the game will be easy. Meanwhile, the skirmish mode will be exactly as stated in the SRS document under External Interface Requirements at Tactical Planning Interface 3.1.6. So, skirmish mode will have a simple drop down with difficulty, and and a simple choice of dolphin or sharks with a preordained map. 
+
+iv. Game movement/ action
+Once the user has actually selected a 2D tile map the game will begin. This stage of the game is fundamentally made up of unit movement and unit action. Unit movement is dictate by tile type and unit type. Each unit holds stats like moment, attack, and defense. Thus, some units will move farther than other units, and different “terrain” will be either a hindrance or neutral for the units. Furthermore, units may attack other enemy units by moving directly next to the said unit and selecting selecting the command attack. 
+
+
 ###3. Technical system architecture 
 
 ####3.1. Overview
@@ -95,40 +105,92 @@ Player control is dictated by player engine; enemy player control is dictated by
 The menu interface is only controlled by the player engine and has elements controlled by the GUI. The menu interface has branching paths, and a menu screen, which shall be an artistic asset held in the assets folder which will be rendered at runtime of the game. 
 
 
-###4. Rational for each architectural choice    
-###5. Development view
+###4. Development view
 ![developmentdiagram](https://cloud.githubusercontent.com/assets/22534157/19913109/990cb0ea-a06d-11e6-907c-7ffbb4abeff4.png)
 
 The game will be built using the Unity game development engine and programmed using the C# programming language. 
-###6. Physical view
+###5. Physical view
 ![physicalview](https://cloud.githubusercontent.com/assets/22534157/19913205/69c45eea-a06e-11e6-8761-6b277f97ec00.png)
 
 Description: All elements of the game can be accessed through a computer or mobile device. The device then interacts with the LAN server in order to connect with other players. No databases or other servers are needed. 
-###7. Database view
+###6. Database view
 A database will not be implemented in this project.  This section is kept in should the future iterations of this project call for the use of a database.
-###8. Work-assignment view
+###7. Work-assignment view
 All parts of the project will be worked on by all members of the team either as a whole or in pairs.  The reason for this is because the group is using an egoless approach to the games design and input from all members is required before major decisions are made for the project.  
 
 While every member will have input into each part of the game certain sections will be focused on primarily by individuals.  
 
-The system logic will be handled by: Christopher Gore  
-The User Interface will be handled by: Stephen Harb  
-The acquisition of art assets will be handled by: Daniel LaBorde  
-The game sound will be handled by: Mason Meredith
+Team Responsibilities:  
+Design:  
 
-###9. Element catalog
+1. Documentarian: Mason  
+    a. -Document editing
+2. Secretary: Chris
+3. Acquisitions: Stephen  
+    a. -Concept art  
+    b. -Acquiring design  
+    c. -Flow charts  
+4. Research: Daniel  
+    a. -Design research  
+    b. -Engineering
+
+Development:  
+
+1. Implementation manager- Mason  
+    a. Assure the team follows the Flow-charts  
+2. Artistic/Assets manager- Daniel  
+    a. Management of media  
+    b. Assurance of the functionality of the GUI  
+3. Secretarial manager- Chis  
+    a. Take meeting notes  
+    b. Report meeting minutes  
+    c. Manage deadlines  
+    d. Mange Document and deliverable editing  
+    e. Communicating to the client  
+4. Management Liaison- Stephen  
+    a. Communicates between sections  
+    b. Assure interface between team  
+    c. Integration Control  
+
+Coding:  
+
+1. System Logic: Chris 
+2. User Interface: Stephen
+3. Art assets: Daniel 
+4. Game Sound: Mason
+
+Testing:
+
+1. Secretarial: Chis  
+    a. Take meeting notes  
+    b. Report meeting minutes  
+    c. Manage deadlines  
+    d. Mange Document and deliverable editing  
+    e. Communicating to the client  
+2. Error Control: Daniel  
+    a. Report found errors in the system  
+    b. Communicate errors where errors originate  
+3. Revision: Stephen  
+    a. Handle code revisions  
+    b. Mange error revision ideas  
+4. Troubleshooter/Quality Assurance: Mason  
+    a. Troubleshoot the platform  
+    b. Mange playability of finished product
+
+
+###8. Element catalog
 ![elementcatalog](https://cloud.githubusercontent.com/assets/22534157/19913211/7206a266-a06e-11e6-866b-cd8abd39e8aa.png)
-###10. User interfaces
+###9. User interfaces
 The following user interfaces are planned; menu/selection interface, tactical planning interface, play interface, and system options interface. 
 Each interface will work as such:
 
 ![uidiagram](https://cloud.githubusercontent.com/assets/22534157/19916626/cb7c2ae4-a089-11e6-90dc-a7ebc9f5d121.png)
 
-####10.1 Menu Interface
+####9.1 Menu Interface
 The Menu interface is described in 2.5 and 3.5. The interface allows the player to control and select what level the player will play and enter setting controls. 
 
-####10.2 Tactical Planning Interface
+####9.2 Tactical Planning Interface
 This interface will have the options to pick either the dolphins or sharks in a drop down menu. These two sides each have certain boons to consider including attributes like attack, defense, or resources. Additionally, the tactical planning interface also allows the user to download previous games into a saved slot or overwrite the one saved slot.  This means that there are two buttons regarding this function one for a new game, and one for a continued game.  Finally, if it is a new game then the difficulty is re-set to either easy or hard with an additional two buttons. 
 
-####10.3 Play Interface
+####9.3 Play Interface
 This interface will need a select function for each unit in play. Each unit will need a picture, and the select will cause a set of red squares to open for each moveable space. This unit will also have a small button at the bottom of the screen that will open the System Options Interface. When next to an enemy unit the friendly will turn to a new picture. By selecting this unit, the user can either attack (changing the color of the unit background), or defend (changing the color of the unit background). 
