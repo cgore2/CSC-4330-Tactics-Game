@@ -9,21 +9,19 @@ namespace UnityStandardAssets._2D
 	{
 	    private int hitPoints;
 	    private int attackPoints;
-	    private int[] status = new int[3]    //array to store HP, AP, and position
+	    private int[] status = new int[4]    //array to store HP, AP, row, and column
+	    public Square position;
 	    //public Square moveRange; 
 	    //public Square attackRange;
 	    Unit unit = new Unit();
-	    public Square position;          		//need int[,] square = new int[3,3]{
-	    						//{{0,0}{0,1}{0,2}},
-							//{{1,0}{1,1}{1,2}},
-							//{{2,0}{2,1}{2,2}}; also getSquare() method
-
 
 	    protected void Start()
 	    {
 		hitPoints = 10;
 		attackPoints = 5;
-		position = square[0,0];
+		position.setRow(0);
+		position.setColumn(0);
+	
 	    }
 
 	    // Update is called once per frame
@@ -31,13 +29,14 @@ namespace UnityStandardAssets._2D
 	    {
 		hitPoints = hitPoints;
 		attackPoints = attackPoints;
-		position = unit.getSquare();
 	    }
 
-	    //moves the unit from its current position(square) to a new square
-	    public void MoveUnit(int x, int y)
+	
+	    public void MoveUnit(Square s, Square z)
 	    {
-	       position = square[x,y];
+	    	s.setRow(z.getRow());
+	        s.setColumn(z.getColumn());
+
 	    }
 
 	    public void Attack()
@@ -50,7 +49,8 @@ namespace UnityStandardAssets._2D
 	    {
 		status[0] = hitPoints;
 		status[1] = attackPoints;
-		status[3] = position;
+		status[2] = position.getRow();
+		status[3] = position.getColumn();
 		return status;
 	    }
 	}
