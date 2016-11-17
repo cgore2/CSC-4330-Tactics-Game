@@ -4,13 +4,14 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 0.4
+Version 0.5
 
 |Name|Date|Reason for Changes|Version|
 |---|---|---|---|
 |Christopher Gore|11/17|Created Test Case 7|0.4|
 |Christopher Gore|11/17|Created Test Case 8|0.4|
-
+|Mason Meredith |11/17|Created Test Case 10|0.5|
+|Mason Meredith |11/17|Created Test Case 11|0.5|
 
 |Test Case 5|
 |---|
@@ -129,6 +130,52 @@ Version 0.4
 |Post Conditions|
 |---|
 |1. The game closes|
+
+|Test Case 10|
+|---|
+|Test Case #10: Test Setting Brightness Control
+|System: Game Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Changes the brightness of the game interface only
+|Test Case Name: Setting Brightness Control 
+|Subsystem: Game Brightness  
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has access to a Windows computer with brightness capabilities.|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|1|Click the submenu button within the in-game play.| Submenu opens with all the submenu options including the brightness bar|| ||
+|1|Click one of the segments in the brightness bar| The system lowers the game brightness according to which segment of the bar was pressed highlighting that segment|| ||
+|1|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
+|Post Conditions|
+|---|
+|1. The correct highlighted segment will be ready when submenu reopened|
+
+|Test Case 11|
+|---|
+|Test Case #11: Test Setting Brightness Control
+|System: Game Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Game volume controls and volumes settings
+|Test Case Name: Setting Volume Control 
+|Subsystem: Game Volume  
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has access to a Windows computer with volume capabilities|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|1|Click the submenu button within the in-game play.| Submenu opens with all the submenu options including the volume bar|| ||
+|1|Click one of the segments in the volume bar| The system lowers the game volume according to which segment of the bar was pressed highlighting that segment|| ||
+|1|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
+|Post Conditions|
+|---|
+|1. The correct highlighted segment will be ready when submenu reopened|
 
 |Test Case 12|
 |---|
