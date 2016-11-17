@@ -19,6 +19,28 @@ Version 0.3
 |Post Conditions|
 |---|
 
+|Test Case|
+|---|
+|Test Case #6: Test Unit status display  
+|System: Game  Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Test the display feature for unit statistics and status 
+|Test Case Name: Unit Status Display  
+|Subsystem: Game Play  
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has started the app, then selected the game play button. After the user selects the level to play in from the level selection screen, the user mouse’s over a unit and right clicks, the app displays the unit status on the screen.|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+
+|Post Conditions|
+|---|
+
+
 Test Case #0: Start App  
 Test Case #1: Test Game Play button  
 Test Case #2: Test Setting button  
