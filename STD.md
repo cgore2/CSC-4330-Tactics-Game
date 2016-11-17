@@ -67,6 +67,27 @@ Version 0.3
 |---|
 |1. The unit is the new selected unit, status screen closes after five seconds|
 
+|Test Case 9|
+|---|
+|Test Case #9: Test in game Exit Command
+|System: Game Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Test the in game exit feature 
+|Test Case Name: Unit Selection Test  
+|Subsystem: Game Play  
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has started the app, then selected the game play button. After the user selects the level to play in from the level selection screen, the user presses the esc key|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|1|User enters the esc key| Screen closes|| ||
+
+|Post Conditions|
+|---|
+|1. The game closes|
 
 
 
