@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 0.6
+Version 0.7
 
 |Name|Date|Reason for Changes|Version|
 |---|---|---|---|
@@ -17,6 +17,7 @@ Version 0.6
 |Daniel LaBorde |11/17|Created Test Case 2|0.6|
 |Daniel LaBorde |11/17|Created Test Case 3|0.6|
 |Daniel LaBorde |11/17|Created Test Case 4|0.6|
+|Christopher Gore|11/17|Minor deletions|0.7|
 
 |Test Case 0|
 |---|
@@ -329,18 +330,3 @@ Version 0.6
 |Post Conditions|
 |---|
 |1. The app closes|
-
-
-Test Case #0: Start App  D+  
-Test Case #1: Test Game Play button  D+  
-Test Case #2: Test Setting button  D+  
-Test Case #3: Test Level Selection button  D+  
-Test Case #4: Test Game Start  D  
-Test Case #5: Test Player Unit Selection  S+  
-Test Case #6: Test Unit status display  S+  
-Test Case #7: Test Unit Movement  C+  
-Test Case #8: Test Unit Attack  C  
-Test Case #9: Test in game Exit Command  S+  
-Test Case #10: Test Setting Bightness Control M+   
-Test Case #11: Test Setting Volume Control  M+  
-Test Case #12: From Menu App closure    
