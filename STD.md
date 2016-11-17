@@ -65,7 +65,7 @@ Version 0.3
 
 |Post Conditions|
 |---|
-|1. The unit is the new selected unit|
+|1. The unit is the new selected unit, status screen closes after five seconds|
 
 
 
