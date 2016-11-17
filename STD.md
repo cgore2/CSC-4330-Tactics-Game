@@ -19,6 +19,31 @@ Version 0.3
 |Post Conditions|
 |---|
 
+
+|Test Case 5|
+|---|
+|Test Case #5: Test Player Unit Selection
+|System: Game Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Test the selection feature for units under player control 
+|Test Case Name: Unit Selection Test  
+|Subsystem: Game Play  
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has started the app, then selected the game play button. After the user selects the level to play in from the level selection screen, the user mouse’s over a unit and left clicks, the app the displays which unit was selected |
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|1|Mouse Over Desired Unit| Selection notification|| ||
+|2|Left-Click Unit|Unit Status is displayed| | |
+
+|Post Conditions|
+|---|
+|1. The unit is the new selected unit|
+
+
 |Test Case 6|
 |---|
 |Test Case #6: Test Unit status display  
