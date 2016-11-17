@@ -6,10 +6,18 @@ Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
 Version 0.3
 
+|Test Cases|
+|---|
+
+|Preconditions|
+|---|
 
 |Step|Action|Expected System Response|Pass/Fail|Comment|
 |---|---|---|---|---|
 |Step|Action|Expected System Response|Pass/Fail|Comment|
+
+|Post Conditions|
+|---|
 
 Test Case #0: Start App  
 Test Case #1: Test Game Play button  
