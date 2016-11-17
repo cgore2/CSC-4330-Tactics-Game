@@ -89,6 +89,27 @@ Version 0.3
 |---|
 |1. The game closes|
 
+|Test Case 12|
+|---|
+|Test Case #12: From Menu App closure
+|System: Game Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Test the in game exit feature 
+|Test Case Name: From Menu App Closure  
+|Subsystem: Menu
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has started the app, then in the menu the user selects the quit button or presses the esc key|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|1|User enters the esc key or presses the quit button| Screen closes|| ||
+
+|Post Conditions|
+|---|
+|1. The app closes|
 
 
 Test Case #0: Start App  D+  
