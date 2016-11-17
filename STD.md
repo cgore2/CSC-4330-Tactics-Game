@@ -150,6 +150,7 @@ Version 0.5
 |1|Click the submenu button within the in-game play.| Submenu opens with all the submenu options including the brightness bar|| ||
 |1|Click one of the segments in the brightness bar| The system lowers the game brightness according to which segment of the bar was pressed highlighting that segment|| ||
 |1|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
+
 |Post Conditions|
 |---|
 |1. The correct highlighted segment will be ready when submenu reopened|
@@ -173,6 +174,7 @@ Version 0.5
 |1|Click the submenu button within the in-game play.| Submenu opens with all the submenu options including the volume bar|| ||
 |1|Click one of the segments in the volume bar| The system lowers the game volume according to which segment of the bar was pressed highlighting that segment|| ||
 |1|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
+
 |Post Conditions|
 |---|
 |1. The correct highlighted segment will be ready when submenu reopened|
