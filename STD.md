@@ -148,8 +148,8 @@ Version 0.5
 |Step|Action|Expected System Response|Pass/Fail|Comment|
 |---|---|---|---|---|
 |1|Click the submenu button within the in-game play.| Submenu opens with all the submenu options including the brightness bar|| ||
-|1|Click one of the segments in the brightness bar| The system lowers the game brightness according to which segment of the bar was pressed highlighting that segment|| ||
-|1|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
+|2|Click one of the segments in the brightness bar| The system lowers the game brightness according to which segment of the bar was pressed highlighting that segment|| ||
+|3|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
 
 |Post Conditions|
 |---|
@@ -172,8 +172,8 @@ Version 0.5
 |Step|Action|Expected System Response|Pass/Fail|Comment|
 |---|---|---|---|---|
 |1|Click the submenu button within the in-game play.| Submenu opens with all the submenu options including the volume bar|| ||
-|1|Click one of the segments in the volume bar| The system lowers the game volume according to which segment of the bar was pressed highlighting that segment|| ||
-|1|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
+|2|Click one of the segments in the volume bar| The system lowers the game volume according to which segment of the bar was pressed highlighting that segment|| ||
+|3|Exit system submenu to reenter game|System reopens to the same game experience that the player previously inhabited|| ||
 
 |Post Conditions|
 |---|
