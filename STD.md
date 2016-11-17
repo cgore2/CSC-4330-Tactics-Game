@@ -4,10 +4,11 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 0.2
+Version 0.3
 
-|Testcase|
-|Preconditions|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
 |Step|Action|Expected System Response|Pass/Fail|Comment|
 
 Test Case #0: Start App  
