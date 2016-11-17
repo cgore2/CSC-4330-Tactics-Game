@@ -19,7 +19,7 @@ Version 0.3
 |Post Conditions|
 |---|
 
-|Test Case|
+|Test Case 6|
 |---|
 |Test Case #6: Test Unit status display  
 |System: Game  Designed by: [SDMC]  
