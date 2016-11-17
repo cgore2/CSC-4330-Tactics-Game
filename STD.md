@@ -91,16 +91,16 @@ Version 0.3
 
 
 
-Test Case #0: Start App  D+
-Test Case #1: Test Game Play button  D+
-Test Case #2: Test Setting button  D+
-Test Case #3: Test Level Selection button  D+
-Test Case #4: Test Game Start  D
-Test Case #5: Test Player Unit Selection  S+
-Test Case #6: Test Unit status display  S+
-Test Case #7: Test Unit Movement  C+
-Test Case #8: Test Unit Attack  C
-Test Case #9: Test in game Exit Command  S+
-Test Case #10: Test Setting Bightness Control  
-Test Case #11: Test Setting Volume Control  M
-Test Case #12: From Menu App closure  M
+Test Case #0: Start App  D+  
+Test Case #1: Test Game Play button  D+  
+Test Case #2: Test Setting button  D+  
+Test Case #3: Test Level Selection button  D+  
+Test Case #4: Test Game Start  D  
+Test Case #5: Test Player Unit Selection  S+  
+Test Case #6: Test Unit status display  S+  
+Test Case #7: Test Unit Movement  C+  
+Test Case #8: Test Unit Attack  C  
+Test Case #9: Test in game Exit Command  S+  
+Test Case #10: Test Setting Bightness Control    
+Test Case #11: Test Setting Volume Control  M  
+Test Case #12: From Menu App closure  M  
