@@ -35,10 +35,14 @@ Version 0.3
 
 |Step|Action|Expected System Response|Pass/Fail|Comment|
 |---|---|---|---|---|
-|Step|Action|Expected System Response|Pass/Fail|Comment|
+|1|Mouse Over Desired Unit| Selection notification|| ||
+|2|Right-Click Unit|Unit Status is displayed| | |
 
 |Post Conditions|
 |---|
+|1. The unit is the new selected unit|
+
+
 
 
 Test Case #0: Start App  
