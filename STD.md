@@ -4,20 +4,12 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 0.3
+Version 0.4
 
-|Test Cases|
-|---|
-
-|Preconditions|
-|---|
-
-|Step|Action|Expected System Response|Pass/Fail|Comment|
-|---|---|---|---|---|
-|Step|Action|Expected System Response|Pass/Fail|Comment|
-
-|Post Conditions|
-|---|
+|Name|Date|Reason for Changes|Version|
+|---|---|---|---|
+|Christopher Gore|11/17|Created Test Case 7|0.4|
+|Christopher Gore|11/17|Created Test Case 8|0.4|
 
 
 |Test Case 5|
@@ -66,6 +58,55 @@ Version 0.3
 |Post Conditions|
 |---|
 |1. The unit is the new selected unit, status screen closes after five seconds|
+
+
+
+|Test Case 7|
+|---|
+|Test Case #7: Test Unit Movement
+|System: Game Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Test the in-game unit’s ability to move 
+|Test Case Name: Test Unit Movement
+|Subsystem: Game Play  
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has chosen their units and has begun gameplay. Additionally, it is the players turn and the player has a selectable unit available.|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|1|Selects an available unit|The system selects the unit| ||
+|2|The user left clicks to select an available space|The system moves the unit| |
+
+|Post Conditions|
+|---|
+|1. The unit is now in the selected space|
+
+|Test Case 8|
+|---|
+|Test Case #8: Test Unit Attack
+|System: Game Designed by: [SDMC]  
+|Executed by: 
+|Short Description: Test the in-game unit’s ability to attack
+|Test Case Name: Test Unit Attack
+|Subsystem: Game Play  
+|Design Date: 11/17/2016|
+
+|Preconditions| 
+|---|
+|The user has chosen their units and has begun gameplay. Additionally, it is the players turn and the player has a selectable unit available.|
+
+|Step|Action|Expected System Response|Pass/Fail|Comment|
+|---|---|---|---|---|
+|1|Selects an available unit|The system selects the unit| ||
+|2|The user left clicks to select an enemy unit to attack|The system targets the enemy unit to be attacked| ||
+
+|Post Conditions|
+|---|
+|1. The enemy unit has now taken damage
+
 
 |Test Case 9|
 |---|
