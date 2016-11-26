@@ -1,7 +1,7 @@
 package dolphingame;
 
 
-public class Player extends Board {
+public class Player {
 	
 	public Unit[] unit = new Unit[5];
 	public int turnNumber;
