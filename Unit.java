@@ -5,9 +5,13 @@ public abstract class Unit {
 	private int HitPoints;
 	private int AttPoints;
 	private int AttRange;
+	public Square position;
 	
-	public Unit(int hp, int ap, int ar){
+	//EACH unit will have a Square holding its position
+	public Unit(int r, int c, int hp, int ap, int ar){
 		
+		position.setRow(r);
+		position.setColumn(c);
 		HitPoints = hp;
 		AttPoints = ap;
 		AttRange = ar;
@@ -16,7 +20,7 @@ public abstract class Unit {
 	
 	public void MoveUnit(Square s, Square z){
 		s.setRow(z.getRow());
-        s.setColumn(z.getColumn());
+        	s.setColumn(z.getColumn());
         
 	}
 	
@@ -34,6 +38,10 @@ public abstract class Unit {
 	
 	public int getAR(){
 		return AttRange;
+	}
+	
+	public Square getPos(){
+		return position;
 	}
 	
 	//checkStatus()
