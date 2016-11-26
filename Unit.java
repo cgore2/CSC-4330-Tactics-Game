@@ -44,6 +44,9 @@ public abstract class Unit {
 		return position;
 	}
 	
+	public boolean isAlive(){
+            return this.HitPoints > 0;
+        }
 	//checkStatus()
 	
 	
