@@ -5,7 +5,7 @@ public abstract class Unit {
 	private int HitPoints;
 	private int AttPoints;
 	private int AttRange;
-	public Square position;
+	public Square position = new Square(0,0);
 	
 	//EACH unit will have a Square holding its position
 	public Unit(int r, int c, int hp, int ap, int ar){
