@@ -24,8 +24,8 @@ public abstract class Unit {
         
 	}
 	
-	public void Attack(){
-		
+	public void Attack(Unit unit){
+		unit.HitPoints -= this.AttPoints;
 	}
 	
 	public int getHP(){
