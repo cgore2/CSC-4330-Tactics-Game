@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 
 /**
- * The GAME LOGIC should be done in this class 
+ * Most of the code for the GUI and GAME LOGIC goes in this class
  */
 
 public class Board extends JPanel implements ActionListener{
