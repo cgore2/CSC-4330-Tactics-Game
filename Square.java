@@ -1,7 +1,7 @@
 package dolphingame;
 
 
-public abstract class Square 
+public class Square 
 {
     public int row;
     public int column;
