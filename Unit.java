@@ -1,6 +1,6 @@
 package dolphingame;
 
-public class Unit {
+public abstract class Unit {
 	
 	private int HitPoints;
 	private int AttPoints;
