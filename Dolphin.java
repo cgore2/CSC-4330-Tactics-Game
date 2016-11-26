@@ -2,9 +2,9 @@ package dolphingame;
 
 public class Dolphin extends Unit{
 
-	public Dolphin(int hp, int ap, int ar){
+	public Dolphin(int r, int c, int hp, int ap, int ar){
 		
-		super(hp, ap, ar);
+		super(r, c, hp, ap, ar);
 	
 	}
 	
