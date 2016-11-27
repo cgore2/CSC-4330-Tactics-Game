@@ -47,7 +47,8 @@ public abstract class Unit {
 	public boolean isAlive(){
             return this.HitPoints > 0;
         }
-	//checkStatus()
 	
-	
+	public int checkStatus(){
+		//IMPLEMENT ME
+	}
 }
