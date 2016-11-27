@@ -9,9 +9,9 @@ public class Dolphin extends Unit{
 	}
 	
 	@Override
-	public void MoveUnit(Square s, Square z){
-		s.setRow(z.getRow());
-        s.setColumn(z.getColumn());
+	public void MoveUnit(Square z){
+		position.setRow(z.getRow());
+		position.setColumn(z.getColumn());
+        
 	}
-
 }
