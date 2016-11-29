@@ -70,10 +70,10 @@ At this point in time the game Sub dolphin machine cannon has been defined as a 
 The game interface has the highest design priority. The interface will involve selected movements and player involvement as well as the tactical structure for the game. The game interface will include the menu interface, the play interface, the tactical planning interface and the system options interface. These interfaces will be the main way that the player interacts with the game. 
 
 ####2.2. Quality Attributes
-Robustness: In multiplayer, if users lose connection to each other. The system shall save the game and enable the users to reconnect to the game, once connection has been restored.
-Portability: The game will not require internet connection, allowing for more portability with less gameplay constraints.
-Usability: The games UI’s will be very easy to navigate, and the actual gameplay will be very straightforward. Yet, it will still allow for very strategic gameplay.
-Availability: Users with the proper devices to access the game will have access at all times. 
+Robustness: In multiplayer, if users lose connection to each other. The system shall save the game and enable the users to reconnect to the game, once connection has been restored.  
+Portability: The game will not require internet connection, allowing for more portability with less gameplay constraints.  
+Usability: The games UI’s will be very easy to navigate, and the actual gameplay will be very straightforward. Yet, it will still allow for very strategic gameplay.  
+Availability: Users with the proper devices to access the game will have access at all times.   
 
 ###3. Design Process Model 
 ####3.1. Overview
