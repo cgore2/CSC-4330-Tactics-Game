@@ -28,7 +28,7 @@ public class Player {
 			s = new Square(this.startX+moveX, this.startY+moveY, 64, 64, t);
 			this.posX = this.startX+moveX;
 			this.posY = this.startY+moveY;
-			DrawSqTex(s.getTexture(),s.getX(),s.getY(),s.getW(),s.getH());
+			DrawSqTex(s.getTexture(),s.getX(),s.getY()-14,s.getW(),s.getH());
 		}
 		
 		public int CheckMove(int movement, String direction, SqGrid grid){
