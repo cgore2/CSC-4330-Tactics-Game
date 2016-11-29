@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.2
+Version 1.3
 
 ###Table of Contents
 Table of Contents  
@@ -48,6 +48,7 @@ Revision History
 |Stephen Harb|10/31|Creation of Document|1.0|
 |Stephen Harb|10/31|Section 1 introduction inclusion|1.1|
 |Stephen Harb|10/31|Section 2 Objectives Inclusion|1.2|
+|Stephen Harb|10/31|Adding all the Subsection titles|1.3|
 
 
 
