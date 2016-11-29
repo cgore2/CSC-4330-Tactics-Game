@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.1
+Version 1.2
 
 ###Table of Contents
 Table of Contents  
@@ -15,12 +15,9 @@ Revision History
     2. Intended Audience
     3. Scope
     4. Design Summary
-###2. Objectives & Requirements
-    1. Overview
-    2. Game Maps 
-    3. Sprites
-    4. Player Control 
-    5. Menu Interface
+###2. Objectives
+    1. Interface Objectives
+    2. Quality Attributes
 ###3. Design Process Model  
     1. Overview
     2. Game Maps 
@@ -39,12 +36,16 @@ Revision History
     2. Tactical Planning Interface
     3. Play Interface
     4. Systems Options Interface
+###9. Post-Mortem
+    1. Unimplemented Features in demo
+    2. Potential Future of the Project
 
 ###Revision History
 |Name|Date|Reason for Changes|Version|
 |---|---|---|---|
 |Stephen Harb|10/31|Creation of Document|1.0|
 |Stephen Harb|10/31|Section 1 introduction inclusion|1.1|
+|Stephen Harb|10/31|Section 2 Objectives Inclusion|1.2|
 
 
 
@@ -61,4 +62,12 @@ Sub-Dolphin Machine is based on turn based tactical full-awareness games in the 
 ####1.4. Design summary
 At this point in time the game Sub dolphin machine cannon has been defined as a turn based tactical game meant for windows users. Keeping this in mind the users should be able to easily access and play the game. The game is made unique by its implementation of dolphins in a turn based strategy genre. Further more the game offers the user the fun option to use more than just one type of unit but rather multiple battle units. This document will be outlining the conceptual and technical sides of the games design for increased understanding of the pre game maneuvering and in game play. The game will be based on object-oriented architecture, and will be able to easily add future levels in new releases of the game. Using this approach means that the system can change easily, but over all will remain more or less static. 
 
+###2. Objectives
+####2.1. Interface Objectives
+The game interface has the highest design priority. The interface will involve selected movements and player involvement as well as the tactical structure for the game. The game interface will include the menu interface, the play interface, the tactical planning interface and the system options interface. These interfaces will be the main way that the player interacts with the game. 
 
+####2.2. Quality Attributes
+Robustness: In multiplayer, if users lose connection to each other. The system shall save the game and enable the users to reconnect to the game, once connection has been restored.
+Portability: The game will not require internet connection, allowing for more portability with less gameplay constraints.
+Usability: The games UI’s will be very easy to navigate, and the actual gameplay will be very straightforward. Yet, it will still allow for very strategic gameplay.
+Availability: Users with the proper devices to access the game will have access at all times. 
