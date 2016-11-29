@@ -1,36 +1,79 @@
-package dolphingame;
+package data;
 
+import static helpers.Painter.*;
 
 public class Player {
-	
-	public Unit[] unit = new Unit[5];
-	public int turnNumber;
-	public int score;
-	//not sure about playerType
+	public int currentPos;
+	public boolean isAlive;
+	public int posX, posY;
+	public int startX, startY;
+	public int health;
+	Square s;
 
+		
+		
 	
-	public Player(){
-	
-	}
-	
-	//ADDS the selected unit too the Players array of units.. MAX UNITS 3, unitNum can be 1 2 or 3
-	public void AddUnit(String s, int unitNum){
-		if(s == "blue"){
-			unit[unitNum - 1] = new Dolphin(0, 0, 10, 3, 1); // row0 col0 HP10 AP3 AR1
-		}else if(s == "red"){
-			unit[unitNum - 1] = new RedDolphin(0, 0, 10, 3, 1);
-		}else{
-			//if more units are added unit[unitNum - 1] = new GreenDolphin(0, 0, 10, 3, 1);
+		
+		public Player(int startX, int startY , int startH){
+			this.isAlive = true;
+			this.startX=startX;
+			this.startY=startY;
+			this.posX=0;
+			this.posY=0;
+			this.health = startH;
+			
 		}
 		
-	}
-	 
-	public void options(){
+		public void addUnit(int moveX, int moveY, SqType t){
+			s = new Square(this.startX+moveX, this.startY+moveY, 64, 64, t);
+			this.posX = this.startX+moveX;
+			this.posY = this.startY+moveY;
+			DrawSqTex(s.getTexture(),s.getX(),s.getY(),s.getW(),s.getH());
+		}
 		
-	}
+		public int CheckMove(int movement, String direction, SqGrid grid){
+			Square sq = checkIfSqExists(direction,grid);
+			
+			int returnVal=64;
+			if(sq == null){
+				returnVal=0;
+			}
+			return returnVal;
+		}
+		
 	
-	public int CheckScore(){
-		return score;
-	}
-	 
+		
+		public Square checkIfSqExists(String direction, SqGrid grid){
+			Square returnVal=null;
+			if(direction.equals("UP")){
+				returnVal = grid.getSq(getPosX()/64, (getPosY()-64)/64); 
+				if(  grid.getMapVal(getPosX()/64, (getPosY()-64)/64) == 1)
+					returnVal=null;
+			}else if(direction.equals("LEFT")){
+				returnVal = grid.getSq((getPosX()-64)/64, getPosY()/64);
+				if(  grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 1)
+					returnVal=null;
+			}else if(direction.equals("DOWN")){
+				returnVal = grid.getSq(getPosX()/64, (getPosY()+64)/64);
+				if(  grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 1)
+					returnVal=null;
+			}else if(direction.equals("RIGHT")){
+				returnVal = grid.getSq((getPosX()+64)/64, getPosY()/64);
+				if(  grid.getMapVal((getPosX()+64)/64, getPosY()/64) == 1)
+					returnVal=null;
+			}
+			return returnVal;
+		}
+		
+		public void setPos(int pos){
+			this.currentPos = pos;
+		}
+		
+		public int getPosX(){
+			return posX;
+		}
+		
+		public int getPosY(){
+			return posY;
+		}
 }
