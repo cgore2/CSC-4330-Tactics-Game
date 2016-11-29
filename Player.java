@@ -66,8 +66,8 @@ public class Player {
 		/**
 		 * Checks if the Square in a certain direction exist
 		 * 
-		 * @param direction
-		 * @param grid
+		 * @param direction the direction it will be checking
+		 * @param grid the grid it will be checking on
 		 * @return null if it cannot be moved too, otherwise return the position to move too
 		 */
 		public Square checkIfSqExists(String direction, SqGrid grid){
