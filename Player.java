@@ -10,6 +10,8 @@ public class Player {
 	public int health;
 	Square s;
 
+
+
 		
 		
 	
@@ -31,6 +33,10 @@ public class Player {
 			DrawSqTex(s.getTexture(),s.getX(),s.getY()-14,s.getW(),s.getH());
 		}
 		
+		public Square getS(){
+			return s;
+		}
+		
 		public int CheckMove(int movement, String direction, SqGrid grid){
 			Square sq = checkIfSqExists(direction,grid);
 			
@@ -40,30 +46,72 @@ public class Player {
 			}
 			return returnVal;
 		}
-		
 	
 		
 		public Square checkIfSqExists(String direction, SqGrid grid){
 			Square returnVal=null;
+			
+			
 			if(direction.equals("UP")){
 				returnVal = grid.getSq(getPosX()/64, (getPosY()-64)/64); 
-				if(  grid.getMapVal(getPosX()/64, (getPosY()-64)/64) == 1)
+				if(  grid.getMapVal(getPosX()/64, (getPosY()-64)/64) == 1
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 5
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 6
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 7
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 8
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 9
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 10
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 11
+						|| grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 12
+					    || grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 13
+					    || grid.getMapVal(getPosX()/64, (getPosY()-64)/64)== 14)
 					returnVal=null;
 			}else if(direction.equals("LEFT")){
 				returnVal = grid.getSq((getPosX()-64)/64, getPosY()/64);
-				if(  grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 1)
+				if(  grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 1
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 5
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 6
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 7
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 8
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 9
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 10
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 11
+						|| grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 12
+					    || grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 13
+					    || grid.getMapVal((getPosX()-64)/64, getPosY()/64)== 14)
 					returnVal=null;
 			}else if(direction.equals("DOWN")){
 				returnVal = grid.getSq(getPosX()/64, (getPosY()+64)/64);
-				if(  grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 1)
+				if( grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 1 	
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 5
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 6
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 7
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 8
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 9
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 10
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 11
+						|| grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 12
+					    || grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 13
+					    || grid.getMapVal(getPosX()/64, (getPosY()+64)/64)== 14)
 					returnVal=null;
 			}else if(direction.equals("RIGHT")){
 				returnVal = grid.getSq((getPosX()+64)/64, getPosY()/64);
-				if(  grid.getMapVal((getPosX()+64)/64, getPosY()/64) == 1)
+				if(  grid.getMapVal((getPosX()+64)/64, getPosY()/64) == 1
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 5
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 6
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 7
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 8
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 9
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 10
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 11
+						|| grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 12
+					    || grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 13
+					    || grid.getMapVal((getPosX()+64)/64, getPosY()/64)== 14)
 					returnVal=null;
 			}
 			return returnVal;
 		}
+		
 		
 		public void setPos(int pos){
 			this.currentPos = pos;
