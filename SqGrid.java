@@ -9,8 +9,10 @@ public class SqGrid {
 	public int startX;
 	public int startY;
 	public int gridX = 15, gridY = 10;
+	public int[][] OriginalMap;
 	
 	public SqGrid(int[][] newMap){
+		OriginalMap=newMap;
 		map = new Square[gridX][gridY];
 		for(int i = 0; i < map.length; i++){
 			for(int j = 0; j < map[i].length; j++){
@@ -27,11 +29,22 @@ public class SqGrid {
 				case 3:
 					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.RD);
 					break;
-
+				case 4:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.Sand);
+					break;
+				case 5:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.Sand);
+					break;
 				}
-
 			}
 		}	
+	}
+	public int getMapVal(int i, int j)
+	{
+		if(i<0||j<0)
+			return 1;
+		else
+			return OriginalMap[j][i];
 	}
 	
 	public int getStartX(){
@@ -56,6 +69,7 @@ public class SqGrid {
 		map[x][y] = new Square(x*64, y*64, 64, 64, type);
 	}
 	
+	//important
 	public Square getSq(int x, int y){
 		Square returnVal = null;
 		try{
@@ -74,7 +88,7 @@ public class SqGrid {
 				DrawSqTex(t.getTexture(), t.getX(), t.getY(), t.getW(), t.getH());
 			}
 		}
-		
 	}
+	
 }
 
