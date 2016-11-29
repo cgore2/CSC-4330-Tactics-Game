@@ -11,6 +11,11 @@ public class SqGrid {
 	public int gridX = 15, gridY = 10;
 	public int[][] OriginalMap;
 	
+        /**
+         * This is when the program will convert a predefined 2D int array into
+         * a 2D square array.
+         * @param newMap int[][]
+         */
 	public SqGrid(int[][] newMap){
 		OriginalMap=newMap;
 		map = new Square[gridX][gridY];
@@ -68,6 +73,14 @@ public class SqGrid {
 			}
 		}	
 	}
+        
+        /**
+         * This will draw out specific integer values from the original 2D 
+         * int array.
+         * @param i first int value
+         * @param j second int value
+         * @return int value at position i,j in 2d array
+         */
 	public int getMapVal(int i, int j)
 	{
 		if(i<0||j<0)
@@ -76,29 +89,58 @@ public class SqGrid {
 			return OriginalMap[j][i];
 	}
 	
+        /**
+         * gets the startX value
+         * @return int startX
+         */
 	public int getStartX(){
 		return startX;
 	}
 	
+        /**
+         * gets the startY value 
+         * @return int startY
+         */
 	public int getStartY(){
 		return startY;
 	}
 	
+        
+        /**
+         * Gets the Grid X value
+         * @return the int gridX 
+         */
 	public int getGridX(){
 		return gridX;
 	}
 	
+        /**
+         * gets the grid y value
+         * @return the int gridY
+         */
 	public int getGridY(){
 		return gridY;
 	}
 	
 	
-	
+	/**
+         * set/replaces the int x coordinate, int y coordinate, and one of the 
+         * predefined SqTypes into a square.
+         * @param x int 
+         * @param y int
+         * @param type predefined SqType
+         */
 	public void setSq(int x, int y, SqType type){
 		map[x][y] = new Square(x*64, y*64, 64, 64, type);
 	}
 	
-	//important
+	/**
+         * gets a specific specified square according to the int x coordinate
+         * and int y coordinate.
+         * @param x int x coordinate
+         * @param y int y coordinate
+         * @return  a specific Square
+         */
 	public Square getSq(int x, int y){
 		Square returnVal = null;
 		try{
@@ -109,7 +151,10 @@ public class SqGrid {
 		return returnVal;
 	}
 
-
+        /**
+         * This function draws the a filled 2D Square array which 
+         * represent the game grid. 
+         */
 	public void Draw(){
 		for(int i = 0; i < map.length; i++){
 			for(int j = 0; j < map[i].length; j++){
