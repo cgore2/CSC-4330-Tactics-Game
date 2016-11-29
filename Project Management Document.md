@@ -20,23 +20,25 @@ Revision History
     2. Quality Attributes
 ###3. Design Process Model  
     1. Overview
-    2. Game Maps 
-    3. Sprites
-    4. Player Control 
-    5. Menu Interface
+    2. Team Structure
+    3. Extreme Programming Methodlogy
 ###4. Management & Version Control
     1. Overview
-    2. Source Code Organization
+    2. Version Structure
     3. Programming Methodology and Commenting
 ###5. Management of Deliverables
+    1. Timeline of Project and Deliverables
+    2. Fabrication Schedule
+    3. Quality Assurance
 ###6. Risk Management
-###7. Projected Schedule
-###8. Marketing Features & Player Elements
-    1. Menu Interface
-    2. Tactical Planning Interface
-    3. Play Interface
-    4. Systems Options Interface
-###9. Post-Mortem
+    1. Sources of Risk
+    2. Time Management
+    3. Technical Risk Management
+###7. Marketing Features & Player Elements
+    1. Selling Features
+    2. Conflict Elements
+    3. Player Elements
+###8. Post-Mortem
     1. Unimplemented Features in demo
     2. Potential Future of the Project
 
@@ -71,3 +73,32 @@ Robustness: In multiplayer, if users lose connection to each other. The system s
 Portability: The game will not require internet connection, allowing for more portability with less gameplay constraints.
 Usability: The games UI’s will be very easy to navigate, and the actual gameplay will be very straightforward. Yet, it will still allow for very strategic gameplay.
 Availability: Users with the proper devices to access the game will have access at all times. 
+
+###3. Design Process Model 
+####3.1. Overview
+####3.2. Team Structure
+####3.3. Extreme Programming Methodlogy
+
+###4. Management & Version Control
+####4.1. Overview
+####4.2. Version Structure
+####4.3. Programming Methodology and Commenting
+
+###5. Management of Deliverables
+####5.1. Timeline of Project and Deliverables
+####5.2. Fabrication Schedule
+####5.3. Quality Assurance
+    
+###6. Risk Management
+####6.1. Sources of Risk
+####6.2. Time Management
+####6.3. Technical Risk Management
+
+###7. Marketing Features & Player Elements
+####7.1. Selling Features
+####7.2. Conflict Elements
+####7.3. Player Elements
+
+###8. Post-Mortem
+####8.1. Unimplemented Features in demo
+####8.2. Potential Future of the Project
