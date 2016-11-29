@@ -16,6 +16,7 @@ public class Start {
 	public Player e;
 	public SqGrid grid;
 	public boolean entered = false;
+	Square s;
 
 	public void Move() throws InterruptedException {
 		while (Keyboard.next()) {
@@ -143,21 +144,21 @@ public class Start {
 
 		BeginSession();
 
-		int[][] map = { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1 },
-			        	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1 },
-			        	{ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0 },
-			        	{ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0 }, 
-			        	{ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0 },
-			        	{ 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0 }, 
-			        	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-			        	{ 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-			        	{ 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-			        	{ 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 } };
+		int[][] map = { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 4, 14 },
+			        	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 11, 14 }, // 5 NW   6NE   7SW  8SE    
+			        	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14 }, //9 N 10W 11S 12E
+			        	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14 }, 
+			        	{ 0, 0, 0, 0, 0, 0, 0, 5, 6, 0, 0, 0, 0, 0, 14 },
+			        	{ 0, 0, 0, 0, 0, 0, 0, 7, 8, 0, 0, 0, 0, 0, 14 }, 
+			        	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14 },
+			        	{ 0, 0, 0, 0, 0, 5, 6, 0, 0, 0, 0, 0, 0, 0, 14 },
+			        	{ 0, 0, 0, 0, 0, 10, 12, 0, 0, 0, 0, 0, 0, 0, 14 },
+			        	{ 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 1 } };
 
 		this.moveXp = 0;
-		this.moveYp = 0;
-		this.moveXe = 896;
-		this.moveYe = 576;
+		this.moveYp = 64;
+		this.moveXe = 832;
+		this.moveYe = 512;
 		this.movement = 64;
 		int hp = 5;
 		int he = 5;
@@ -179,10 +180,11 @@ public class Start {
 			{
 			p2.addUnit(moveXe, moveYe, SqType.RD);
 			}
+			
 			Move();
 			//Attack();
 			if (!entered) {
-				Painter.DrawMenu(896,576);
+				DrawMenu(896,576);
 				entered = true;
 			}
 			Display.update();
