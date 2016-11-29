@@ -2,13 +2,11 @@ package data;
 
 public enum SqType {
 	
-	Water("water", true), Sand("sand", false), D("dolphin", false), RD("redDolphin", false), MenuSDMC("menuButton", true)
+	Water("water"), Sand("sand"), D("dolphin"), RD("redDolphin"), MenuSDMC("menuButton")
 	
 	String textName;
-	boolean moveable;
 	
-	SqType(String textName, boolean moveable){
+	SqType(String textName){
 		this.textName = textName;
-		this.moveable = moveable;
 	}
 }
