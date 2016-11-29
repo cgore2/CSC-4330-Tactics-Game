@@ -21,7 +21,7 @@ public class SqGrid {
 					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.Water);
 					break;
 				case 1:
-					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.Sand);
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.O);
 					break;
 				case 2:
 					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.D);
@@ -30,11 +30,40 @@ public class SqGrid {
 					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.RD);
 					break;
 				case 4:
-					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.Sand);
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.Tree);
 					break;
 				case 5:
-					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.Sand);
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SNW);
 					break;
+				case 6:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SNE);
+					break;
+				case 7:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SSW);
+					break;
+				case 8:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SSE);
+					break;
+				case 9:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SN);
+					break;
+				case 10:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SW);
+					break;
+				case 11:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SS);
+					break;
+				case 12:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.SE);
+					break;
+				case 13:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.ON);
+					break;
+				case 14:
+					map[i][j] = new Square(i*64, j*64, 64, 64, SqType.OW);
+					break;
+
+
 				}
 			}
 		}	
