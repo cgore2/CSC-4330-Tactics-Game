@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.12
+Version 1.13
 
 ###Table of Contents
 Table of Contents  
@@ -29,6 +29,7 @@ Revision History
     1. Timeline of Project and Deliverables
     2. Fabrication Schedule
     3. Quality Assurance
+    4. Team Responsibilites
 ###6. Risk Management
     1. Sources of Risk
     2. Time Management
@@ -38,7 +39,7 @@ Revision History
     2. Potential Future of the Project
     
 ###Appendix 
-    1. Meeting Schedule and Notes
+    Meeting Schedule and Notes
 
 ###Revision History
 |Name|Date|Reason for Changes|Version|
@@ -56,6 +57,7 @@ Revision History
 |Christopher Gore|10/31|Inclusion of section 4|1.10|
 |Stephen Harb|10/31|Inclusion of section 6 charts|1.11|
 |Stephen Harb|10/31|Removal of section 7, section 8 renamed to 7|1.12|
+|Christopher Gore|10/31|Inclusion of section 5.4|1.13|
 
 
 
@@ -115,6 +117,14 @@ Proramming started on 11/7/16. Each team member had seperate responsibilties to 
 
 ####5.3. Quality Assurance
 Testing of the game was done itermidently through development. Every area of development was tested, and then as shown functional or nonfunctional were kept or abandoned. To assure quality, Team [SDMC] designed a testing document as well as set team members to be in charge of system and game testing. 
+####5.4 Team Responsibilities
+Chris: Secretarial duties including taking meeting notes, managing documentation, communicating with the client, and assisting in coding the games logic.  
+
+Daniel: Research into the assets needed for the game, management of media and functionality of the GUI, and error control.  
+
+Mason: Worked on document editing and troubleshooting as quality assurance on finished product.  
+
+Stephen: Acquisition of art assets, communication between team members, and error checking.  
 
 ###6. Risk Management
 ####6.1. Sources of Risk
