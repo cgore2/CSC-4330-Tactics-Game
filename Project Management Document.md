@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.6
+Version 1.7
 
 ###Table of Contents
 Table of Contents  
@@ -54,6 +54,7 @@ Revision History
 |Stephen Harb|10/31|Inclusion of section 8|1.4|
 |Stephen Harb|10/31|Inclusion of section 5|1.5|
 |Stephen Harb|10/31|Inclusion of section 3|1.6|
+|Christopher Gore|10/31|Inclusion of Meeting Schedule and Notes|1.7|
 
 
 
@@ -84,7 +85,7 @@ Availability: Users with the proper devices to access the game will have access 
 ####3.1. Overview
 Extreme programming was the optimal design process for Team [SDMC]. As an egoless team that had four members of roughly equal skill, having team members work together on each area of code, and then prototype rapidly allowed for the most efficent development of code and a working product. Development was based off a UML created early on, however, while the UML was used as a base point fro design, as development went on, the system heiarchy was forced to change.
 
-![alt tag](https://cloud.githubusercontent.com/assets/16145394/20734781/56429d92-b661-11e6-8be8-8263c146db84.png)
+![alt tag](https://cloud.githubusercontent.com/assets/16145394/20734781/56429d92-b661-11e6-8be8-8263c146db84.png)  
 Figure 1. UML For Project
 
 ####3.2 Design Dependancies
@@ -130,3 +131,36 @@ For future features, implementing the un-included features into the demo would b
  
 ###Appendix 
 ####1. Meeting Schedule and Notes
+
+Meetings Summary  
+8/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – First meeting with group members.  Discussed possible ideas for project including a project based on measuring weather changes around LSU, a project involving image recognition, a project involving the use of GoPros and a couple of ideas for games.  
+
+9/6/16 – Chris Gore, Stephen Harb, Daniel LaBorde – Finalized our decision on what project we wanted, assigned roles to members, and created a basic outline for the project.  
+
+9/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed basic design features needed to implement the project including a grid system for our game board and the information needed to build individual units.  Discussed which engine to use to make the game in.  
+
+10/21/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met up to work on SRS document as a group.  Combined individual entries into a single document.  
+
+10/24/16 – Chris Gore, Mason Meredith – Spent meeting discussing and getting acquainted with the Unity engine.  
+
+11/2/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Design Document as a group.  Integrated our individual contributions and edited each other’s contributions to the document.  
+
+11/7/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Began separation of coding duties and implementing classes and the basic framework to be used in our project.  Included are creating the unit class and all fields needed for the dolphin units which was implemented by Chris Gore and Daniel LaBorde.  The background and the basics of the game board was assigned to Stephen Harb.  Lastly, the Player class involving what is to be controlled by the players was to be implemented by Mason Meredith.  
+
+11/10/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation.  Discussions on abandoning Unity engine due to difficulties the team had with working with the engine.  
+
+11/14/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation.  Team voted against the use of Unity and began reworking code to be used in our own game engine developed using Java.  
+
+11/17/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Testing Document and integrate test cases worked on individually.  Looked over each other’s work and edited test cases.  
+
+11/22/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Further discussions regarding the teams coding duties and what we would be working on over the break.  
+
+11/26/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on code in a group setting.  Heavily edited some areas of the code including the Unit class and its subclasses.  
+
+11/27/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Made finishing touches on code.  Made finalized version of PowerPoint presentation.  Filmed video of project demo and discussed what we would be saying during the presentation.  
+
+11/28/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to do an extra couple of run-throughs of the presentation and make sure we all knew our parts.  
+
+11/29/16 – Daniel LaBorde, Mason Meredith – Meeting to fix java documentation and make minor changes to parts of the code.  Meeting occurred via GroupMe.  
+
+11/29/16 – Chris Gore, Stephen Harb – Meeting to go over Project Management Document and consolidate information.  
