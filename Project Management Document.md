@@ -44,22 +44,22 @@ Revision History
 ###Revision History
 |Name|Date|Reason for Changes|Version|
 |---|---|---|---|
-|Stephen Harb|10/31|Creation of Document|1.0|
-|Stephen Harb|10/31|Section 1 introduction inclusion|1.1|
-|Stephen Harb|10/31|Section 2 Objectives Inclusion|1.2|
-|Stephen Harb|10/31|Adding all the Subsection titles|1.3|
-|Stephen Harb|10/31|Inclusion of section 8|1.4|
-|Stephen Harb|10/31|Inclusion of section 5|1.5|
-|Stephen Harb|10/31|Inclusion of section 3|1.6|
-|Christopher Gore|10/31|Inclusion of Meeting Schedule and Notes|1.7|
-|Christopher Gore|10/31|Minor edits|1.8|
-|Stephen Harb|10/31|Inclusion of section 6|1.9|
-|Christopher Gore|10/31|Inclusion of section 4|1.10|
-|Stephen Harb|10/31|Inclusion of section 6 charts|1.11|
-|Stephen Harb|10/31|Removal of section 7, section 8 renamed to 7|1.12|
-|Christopher Gore|10/31|Inclusion of section 5.4|1.13|
-|Christopher Gore|10/31|Minor changes|1.14|
-
+|Stephen Harb|10/30|Creation of Document|1.0|
+|Stephen Harb|10/30|Section 1 introduction inclusion|1.1|
+|Stephen Harb|10/30|Section 2 Objectives Inclusion|1.2|
+|Stephen Harb|10/30|Adding all the Subsection titles|1.3|
+|Stephen Harb|10/30|Inclusion of section 8|1.4|
+|Stephen Harb|10/30|Inclusion of section 5|1.5|
+|Stephen Harb|10/30|Inclusion of section 3|1.6|
+|Christopher Gore|10/30|Inclusion of Meeting Schedule and Notes|1.7|
+|Christopher Gore|10/30|Minor edits|1.8|
+|Stephen Harb|10/30|Inclusion of section 6|1.9|
+|Christopher Gore|10/30|Inclusion of section 4|1.10|
+|Stephen Harb|10/30|Inclusion of section 6 charts|1.11|
+|Stephen Harb|10/30|Removal of section 7, section 8 renamed to 7|1.12|
+|Christopher Gore|10/30|Inclusion of section 5.4|1.13|
+|Christopher Gore|10/30|Minor changes|1.14|
+|Mason Meredith|10/30|Minor changes|1.14|
 
 
 ###1. Introduction
@@ -164,34 +164,66 @@ For future features, implementing the un-included features into the demo would b
 ###Appendix 
 #### Meeting Schedule and Notes
 
-8/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – First meeting with group members.  Discussed possible ideas for project including a project based on measuring weather changes around LSU, a project involving image recognition, a project involving the use of GoPros and a couple of ideas for games.  
+8/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – First meeting with group members. Discussed possible ideas for project including a project based on measuring weather changes around LSU, a project involving image recognition, a project involving the use of GoPros and a couple of ideas for games.
 
-9/6/16 – Chris Gore, Stephen Harb, Daniel LaBorde – Finalized our decision on what project we wanted, assigned roles to members, and created a basic outline for the project.  
+Mason Meredith: Simple discussion of ideas, some in meeting research, and later research into some of the potential ideas. 
 
-9/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed basic design features needed to implement the project including a grid system for our game board and the information needed to build individual units.  Discussed which engine to use to make the game in.  
+9/6/16 – Chris Gore, Stephen Harb, Daniel LaBorde – Finalized our decision on what project we wanted, assigned roles to members, and created a basic outline for the project.
 
-10/21/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met up to work on SRS document as a group.  Combined individual entries into a single document.  
+Mason Meredith: I failed to attend this meeting due to the flood work with my family. 
 
-10/24/16 – Chris Gore, Mason Meredith – Spent meeting discussing and getting acquainted with the Unity engine.  
+9/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed basic design features needed to implement the project including a grid system for our game board and the information needed to build individual units. Discussed which engine to use to make the game in.
 
-11/2/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Design Document as a group.  Integrated our individual contributions and edited each other’s contributions to the document.  
+Mason Meredith: This was primarily a idea meeting, but I did suggest working with gamemaker though in the end we went with Unity. 
 
-11/7/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Began separation of coding duties and implementing classes and the basic framework to be used in our project.  Included are creating the unit class and all fields needed for the dolphin units which was implemented by Chris Gore and Daniel LaBorde.  The background and the basics of the game board was assigned to Stephen Harb.  Lastly, the Player class involving what is to be controlled by the players was to be implemented by Mason Meredith.  
+10/21/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met up to work on SRS document as a group. Combined individual entries into a single document.
 
-11/10/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation.  Discussions on abandoning Unity engine due to difficulties the team had with working with the engine.  
+Mason Meredith: I contributed to the first addition of functional requirements, changes to sections 3-4, additions to sections 2-5, addition of user class flowcharts, addition to Sections 3 and 5, and addition of the menu diagram. 
 
-11/14/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation.  Team voted against the use of Unity and began reworking code to be used in our own game engine developed using Java.  
+10/24/16 – Chris Gore, Mason Meredith – Spent meeting discussing and getting acquainted with the Unity engine.
 
-11/17/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Testing Document and integrate test cases worked on individually.  Looked over each other’s work and edited test cases.  
+Mason Meredith: Simple meeting were I started to explore unity on my computer, and discuss future uses. 
 
-11/22/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Further discussions regarding the teams coding duties and what we would be working on over the break.  
+11/2/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Design Document as a group. Integrated our individual contributions and edited each other’s contributions to the document.
 
-11/26/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on code in a group setting.  Heavily edited some areas of the code including the Unit class and its subclasses.  
+Mason Meredith: I added the initial entry into Main System Architecture for sub section iv to section 1, edited 2 and 6 heavily, and did two separate sweeps to ensure no contradictions or grammar errors. 
 
-11/27/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Made finishing touches on code.  Made finalized version of PowerPoint presentation.  Filmed video of project demo and discussed what we would be saying during the presentation.  
+11/7/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Began separation of coding duties and implementing classes and the basic framework to be used in our project. Included are creating the unit class and all fields needed for the dolphin units which was implemented by Chris Gore and Daniel LaBorde. The background and the basics of the game board was assigned to Stephen Harb. Lastly, the Player class involving what is to be controlled by the players was to be implemented by Mason Meredith.
 
-11/28/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to do an extra couple of run-throughs of the presentation and make sure we all knew our parts.  
+Mason Meredith: Simple duty assignments. Each of us were more or less equally involved in this meeting. 
 
-11/29/16 – Daniel LaBorde, Mason Meredith – Meeting to fix java documentation and make minor changes to parts of the code.  Meeting occurred via GroupMe.  
+11/10/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation. Discussions on abandoning Unity engine due to difficulties the team had with working with the engine.
 
-11/29/16 – Chris Gore, Stephen Harb – Meeting to go over Project Management Document and consolidate information.  
+Mason Meredith: In this meeting I mainly was the advocate for the Unity. 
+
+11/14/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation. Team voted against the use of Unity and began reworking code to be used in our own game engine developed using Java.
+
+Mason Meredith: In this meeting I gave up the fight for unity, and instead focuses on understanding how the game would work in java. 
+
+11/17/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Testing Document and integrate test cases worked on individually. Looked over each other’s work and edited test cases.
+
+Mason Meredith: Created test case 10 and ll.
+
+11/22/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Further discussions regarding the teams coding duties and what we would be working on over the break.
+
+Mason Meredith: I discussed the structure mostly. 
+
+11/26/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on code in a group setting. Heavily edited some areas of the code including the Unit class and its subclasses.
+
+Mason Meredith: I worked creating a partial project of all areas of the full project, but it was discarded for a superior design. 
+
+11/27/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Made finishing touches on code. Made finalized version of PowerPoint presentation. Filmed video of project demo and discussed what we would be saying during the presentation.
+
+Mason Meredith: I coded a good portion of movement, collision, and parts of attack in paired programming. 
+
+11/28/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to do an extra couple of run-throughs of the presentation and make sure we all knew our parts.
+
+Mason Meredith: I was in charge of practicing the demo slides/ timing the presentation.  
+
+11/29/16 – Daniel LaBorde, Mason Meredith – Meeting to fix java documentation and make minor changes to parts of the code. Meeting occurred via GroupMe.
+
+Mason Meredith: I worked on all “square” program documents. 
+
+11/29/16 – Chris Gore, Stephen Harb – Meeting to go over Project Management Document and consolidate information.
+
+
