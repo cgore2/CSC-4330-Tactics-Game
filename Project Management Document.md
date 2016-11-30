@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.7
+Version 1.8
 
 ###Table of Contents
 Table of Contents  
@@ -55,6 +55,7 @@ Revision History
 |Stephen Harb|10/31|Inclusion of section 5|1.5|
 |Stephen Harb|10/31|Inclusion of section 3|1.6|
 |Christopher Gore|10/31|Inclusion of Meeting Schedule and Notes|1.7|
+|Christopher Gore|10/31|Minor edits|1.8|
 
 
 
@@ -130,7 +131,7 @@ The demo for SDMC did not include many of the planed features. The primary lacki
 For future features, implementing the un-included features into the demo would be mandatory. Another main area that needs to be developed is a cross platform implementation, potentially even a system that allows for online and mobile play. Background music for the game is nonexistent and would be a place to develop artistic depth into the game. There are multiple potential platforms this game could be marketed on, and they may need to be explored. The future of Sub-Dolphin Machine Cannon would be mostly completing the experience of the game.
  
 ###Appendix 
-####1. Meeting Schedule and Notes
+#### Meeting Schedule and Notes
 
 8/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – First meeting with group members.  Discussed possible ideas for project including a project based on measuring weather changes around LSU, a project involving image recognition, a project involving the use of GoPros and a couple of ideas for games.  
 
