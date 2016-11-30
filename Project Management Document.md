@@ -57,7 +57,7 @@ Revision History
 |Christopher Gore|10/31|Inclusion of Meeting Schedule and Notes|1.7|
 |Christopher Gore|10/31|Minor edits|1.8|
 |Stephen Harb|10/31|Inclusion of section 6|1.9|
-|Christopher Gore|10/31|Includion of section 4|2.0|
+|Christopher Gore|10/31|Inclusion of section 4|2.0|
 
 
 
