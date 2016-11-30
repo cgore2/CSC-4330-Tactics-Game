@@ -16,6 +16,9 @@ public class Painter {
 
 	public static final float WIDTH = 960, HEIGHT = 640;
 	
+	/**
+	 * Draws a window with a title and a set width and height
+	 */
 	public static void BeginSession(){
 		Display.setTitle("Sub-Dolphin Machine Cannon");
 		try {
@@ -36,32 +39,59 @@ public class Painter {
 	
 	}
 	
+	/**
+	 * Draws a square without a texture
+	 * 
+	 * @param x coordinate
+	 * @param y coordinate
+	 * @param w width
+	 * @param h height
+	 */
 	public static void DrawSq(float x, float y, float w, float h){
 		glBegin(GL_QUADS);
-		glVertex2f(x, y); //top left
-		glVertex2f(x + w, y); //top right
-		glVertex2f(x + w, y + h); // bot right
-		glVertex2f(x, y + h); //bot left
+		glVertex2f(x, y); //top left corner of the square
+		glVertex2f(x + w, y); //top right corner of the square
+		glVertex2f(x + w, y + h); // bottom right corner of the square
+		glVertex2f(x, y + h); //bottom left corner of the square
 		glEnd();
 	}
 	
+	/**
+	 * Draws a square with a texture
+	 * 
+	 * @param tex texture to be drawn
+	 * @param x coordinate
+	 * @param y coordinate
+	 * @param w width
+	 * @param h height
+	 */
 	public static void DrawSqTex(Texture tex, float x, float y, float w, float h){
 		tex.bind();
 		glTranslatef(x, y, 0);
 		glBegin(GL_QUADS);
+		
 		glTexCoord2f(0,0);
 		glVertex2f(0,0);
+		
 		glTexCoord2f(1,0);
 		glVertex2f(w,0);
+		
 		glTexCoord2f(1,1);
 		glVertex2f(w,h);
+		
 		glTexCoord2f(0,1);
 		glVertex2f(0,h);
+		
 		glEnd();
 		glLoadIdentity();
 	}
 	
 	
+	/**
+	 * Draws the menu with a specific width and height
+	 * @param w width
+	 * @param h height
+	 */
 	public static void DrawMenu(float w, float h)
 	{
 		Texture menu = LoadTexture("MenuSDMC");
@@ -81,6 +111,13 @@ public class Painter {
 	}
 	
 	
+	/**
+	 * Loads a texture
+	 * 
+	 * @param path the pathway for the image
+	 * @param type the type of image to load (.PNG)
+	 * @return the texture loaded in
+	 */
 	public static Texture LongLoadTexture(String path, String type){
 		Texture tex = null;
 		InputStream in = ResourceLoader.getResourceAsStream(path);
@@ -93,6 +130,12 @@ public class Painter {
 		
 	}
 	
+	/**
+	 * Quick load of a texture
+	 * 
+	 * @param name of the texture to be loaded
+	 * @return the texture loaded in
+	 */
 	public static Texture LoadTexture(String name){
 		Texture tex = null;
 		tex = LongLoadTexture("res/"+name+".png", "PNG");
