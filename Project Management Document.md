@@ -20,8 +20,7 @@ Revision History
     2. Quality Attributes
 ###3. Design Process Model  
     1. Overview
-    2. Team Structure
-    3. Extreme Programming Methodology
+    2 Design Dependancies
 ###4. Management & Version Control
     1. Overview
     2. Version Structure
