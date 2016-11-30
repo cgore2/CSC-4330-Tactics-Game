@@ -25,7 +25,6 @@ public class Painter {
 			Display.setDisplayMode(new DisplayMode(960, 640));
 			Display.create();
 		} catch (LWJGLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
