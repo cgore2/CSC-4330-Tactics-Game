@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 2.0
+Version 1.11
 
 ###Table of Contents
 Table of Contents  
@@ -57,7 +57,8 @@ Revision History
 |Christopher Gore|10/31|Inclusion of Meeting Schedule and Notes|1.7|
 |Christopher Gore|10/31|Minor edits|1.8|
 |Stephen Harb|10/31|Inclusion of section 6|1.9|
-|Christopher Gore|10/31|Inclusion of section 4|2.0|
+|Christopher Gore|10/31|Inclusion of section 4|1.10|
+|Stephen Harb|10/31|Inclusion of section 6 charts|1.11|
 
 
 
@@ -132,7 +133,14 @@ Design road blocks are guaranteed and one of the most common push backs to the t
 Communication Failure; Likeliness 2, Risk 5   
 A lack of communication would leave the team unable to develop further and each member would be developing alone  
 ####6.2. Time Management
-Time management was observed and maintained in two ways. First through team communication and accountability. Members of the team had to stay in contact with each other on a near daily bases, meaning the time was managed as a group. A preliminary timeline was created in the first incarnation of a team contract, and while that was not adhered to, the team still followed the ideology of this timeline as a structure for the project.  
+Time management was observed and maintained in two ways. First through team communication and accountability. Members of the team had to stay in contact with each other on a near daily bases, meaning the time was managed as a group. A preliminary timeline was created in the first incarnation of a team contract, and while that was not adhered to, the team still followed the ideology of this timeline as a structure for the project.  Two charts were used for timelines to handle time mangement. the first is an abandoned preliminary review of a potential timeline, the second was what we actually did and what documents we actually had to generate.
+
+![alt tag]https://cloud.githubusercontent.com/assets/16145394/20735793/0d39ed7e-b668-11e6-8999-2303c3d3d10c.PNG  
+Figure 2. Preliminary Chart for potential timeline and documents  
+
+![alt tag]https://cloud.githubusercontent.com/assets/16145394/20735798/163a5044-b668-11e6-9756-83928fd7fdf9.PNG  
+Figure 3. Actual Timeline and Chart for delivered Documents  
+
 ####6.3. Technical Risk Management Strategy
 Technical risks were managed mostly through version control and team cooperation. The team ran into a failure of the use of unity and had to vote on switching development to a new platform and programming language part of the way through development and this aspect of risk.
 
