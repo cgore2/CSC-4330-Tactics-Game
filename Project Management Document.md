@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.3
+Version 1.4
 
 ###Table of Contents
 Table of Contents  
@@ -21,7 +21,7 @@ Revision History
 ###3. Design Process Model  
     1. Overview
     2. Team Structure
-    3. Extreme Programming Methodlogy
+    3. Extreme Programming Methodology
 ###4. Management & Version Control
     1. Overview
     2. Version Structure
@@ -49,6 +49,7 @@ Revision History
 |Stephen Harb|10/31|Section 1 introduction inclusion|1.1|
 |Stephen Harb|10/31|Section 2 Objectives Inclusion|1.2|
 |Stephen Harb|10/31|Adding all the Subsection titles|1.3|
+|Stephen Harb|10/31|Inclusion of section 8|1.4|
 
 
 
@@ -102,4 +103,7 @@ Availability: Users with the proper devices to access the game will have access 
 
 ###8. Post-Mortem
 ####8.1. Unimplemented Features in demo
+The demo for SDMC did not include many of the planed features. The primary lacking features were assets. The SDMC demo does not include any sound assets, combat animations, movement animations, additional menu screens, or alternative backgrounds. This detracts heavily from the play experience described in our documents. Other un-included features are the lack of differentiated units, and the lack of additional play levels that would be crucial to the full experience of a tactical game. The final lacking feature that was promised was the settings control. This would have been a menu screen that could control brightness and sound volume. 
 ####8.2. Potential Future of the Project
+For future features, implementing the un-included features into the demo would be mandatory. Another main area that needs to be developed is a cross platform implementation, potentially even a system that allows for online and mobile play. Background music for the game is nonexistent and would be a place to develop artistic depth into the game. There are multiple potential platforms this game could be marketed on, and they may need to be explored. The future of Sub-Dolphin Machine Cannon would be mostly completing the experience of the game.
+ 
