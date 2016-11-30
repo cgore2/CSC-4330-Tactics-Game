@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.11
+Version 1.12
 
 ###Table of Contents
 Table of Contents  
@@ -33,11 +33,7 @@ Revision History
     1. Sources of Risk
     2. Time Management
     3. Technical Risk Management
-###7. Marketing Features & Player Elements
-    1. Selling Features
-    2. Conflict Elements
-    3. Player Elements
-###8. Post-Mortem
+###7. Post-Mortem
     1. Unimplemented Features in demo
     2. Potential Future of the Project
     
@@ -59,6 +55,7 @@ Revision History
 |Stephen Harb|10/31|Inclusion of section 6|1.9|
 |Christopher Gore|10/31|Inclusion of section 4|1.10|
 |Stephen Harb|10/31|Inclusion of section 6 charts|1.11|
+|Stephen Harb|10/31|Removal of section 7, section 8 renamed to 7|1.12|
 
 
 
@@ -144,18 +141,11 @@ Figure 3. Actual Timeline and Chart for delivered Documents
 ####6.3. Technical Risk Management Strategy
 Technical risks were managed mostly through version control and team cooperation. The team ran into a failure of the use of unity and had to vote on switching development to a new platform and programming language part of the way through development and this aspect of risk.
 
-
-
-###7. Marketing Features & Player Elements
-####7.1. Selling Features
-####7.2. Conflict Elements
-####7.3. Player Elements
-
-###8. Post-Mortem
-####8.1. Unimplemented Features in demo
+###7. Post-Mortem
+####7.1. Unimplemented Features in demo
 The demo for SDMC did not include many of the planed features. The primary lacking features were assets. The SDMC demo does not include any sound assets, combat animations, movement animations, additional menu screens, or alternative backgrounds. This detracts heavily from the play experience described in our documents. Other un-included features are the lack of differentiated units, and the lack of additional play levels that would be crucial to the full experience of a tactical game. The final lacking feature that was promised was the settings control. This would have been a menu screen that could control brightness and sound volume. 
 
-####8.2. Potential Future of the Project
+####7.2. Potential Future of the Project
 For future features, implementing the un-included features into the demo would be mandatory. Another main area that needs to be developed is a cross platform implementation, potentially even a system that allows for online and mobile play. Background music for the game is nonexistent and would be a place to develop artistic depth into the game. There are multiple potential platforms this game could be marketed on, and they may need to be explored. The future of Sub-Dolphin Machine Cannon would be mostly completing the experience of the game.
  
 ###Appendix 
