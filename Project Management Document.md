@@ -116,7 +116,7 @@ Testing of the game was done itermidently through development. Every area of dev
 
 ###6. Risk Management
 ####6.1. Sources of Risk
-The Main Sources of Risk are measured on likeliness and risk factor, from a range of 1-5, where a 1 is unlikely and a 5 is neatly guaranteed for likeliness, and a 1 for risk is unlikely to harm the final product, and a 5 leaves the team unable to develop further:
+The Main Sources of Risk are measured on likeliness and risk factor, from a range of 1-5, where a 1 is unlikely and a 5 is neatly guaranteed for likeliness, and a 1 for risk is unlikely to harm the final product, and a 5 leaves the team unable to develop further:  
 Time Management; Likeliness 5, Risk 3  
 Time management represents the most likely and most dangerous risk to the project. If the team does not manage time correctly, this will propagate into worse and more dangerous problems. Thus time management is the most important issue to address first.   
 Design Software Failure; Likeliness 3, Risk 2  
@@ -126,9 +126,9 @@ The event of a team leaving for any reason would be a huge loss to the team, but
 Design Road Blocks; Likeliness 5, Risk 1  
 Design road blocks are guaranteed and one of the most common push backs to the timeline, however, with four team members it is unlikely that every team member will be unable to work through an issue at once halting the entire process of development  
 Communication Failure; Likeliness 2, Risk 5   
-A lack of communication would leave the team unable to develop further and each member would be developing alone
+A lack of communication would leave the team unable to develop further and each member would be developing alone  
 ####6.2. Time Management
-Time management was observed and maintained in two ways. First through team communication and accountability. Members of the team had to stay in contact with each other on a near daily bases, meaning the time was managed as a group. A preliminary timeline was created in the first incarnation of a team contract, and while that was not adhered to, the team still followed the ideology of this timeline as a structure for the project.
+Time management was observed and maintained in two ways. First through team communication and accountability. Members of the team had to stay in contact with each other on a near daily bases, meaning the time was managed as a group. A preliminary timeline was created in the first incarnation of a team contract, and while that was not adhered to, the team still followed the ideology of this timeline as a structure for the project.  
 ####6.3. Technical Risk Management Strategy
 Technical risks were managed mostly through version control and team cooperation. The team ran into a failure of the use of unity and had to vote on switching development to a new platform and programming language part of the way through development and this aspect of risk.
 
