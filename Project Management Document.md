@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.5
+Version 1.6
 
 ###Table of Contents
 Table of Contents  
@@ -54,6 +54,7 @@ Revision History
 |Stephen Harb|10/31|Adding all the Subsection titles|1.3|
 |Stephen Harb|10/31|Inclusion of section 8|1.4|
 |Stephen Harb|10/31|Inclusion of section 5|1.5|
+|Stephen Harb|10/31|Inclusion of section 3|1.6|
 
 
 
@@ -82,6 +83,9 @@ Availability: Users with the proper devices to access the game will have access 
 
 ###3. Design Process Model 
 ####3.1. Overview
+Extreme programming was the optimal design process for Team [SDMC]. As an egoless team that had four members of roughly equal skill, having team members work together on each area of code, and then prototype rapidly allowed for the most efficent development of code and a working product. Development was based off a UML created early on, however, while the UML was used as a base point fro design, as development went on, the system heiarchy was forced to change.
+
+
 ####3.2. Team Structure
 ####3.3. Extreme Programming Methodlogy
 
@@ -89,6 +93,7 @@ Availability: Users with the proper devices to access the game will have access 
 ####4.1. Overview
 ####4.2. Version Structure
 ####4.3. Programming Methodology and Commenting
+####4.4 Configuration Management 
 
 ###5. Management of Deliverables
 ####5.1. Timeline of Project and Deliverables
