@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.13
+Version 1.14
 
 ###Table of Contents
 Table of Contents  
@@ -58,6 +58,7 @@ Revision History
 |Stephen Harb|10/31|Inclusion of section 6 charts|1.11|
 |Stephen Harb|10/31|Removal of section 7, section 8 renamed to 7|1.12|
 |Christopher Gore|10/31|Inclusion of section 5.4|1.13|
+|Christopher Gore|10/31|Minor changes|1.14|
 
 
 
@@ -118,6 +119,8 @@ Proramming started on 11/7/16. Each team member had seperate responsibilties to 
 ####5.3. Quality Assurance
 Testing of the game was done itermidently through development. Every area of development was tested, and then as shown functional or nonfunctional were kept or abandoned. To assure quality, Team [SDMC] designed a testing document as well as set team members to be in charge of system and game testing. 
 ####5.4 Team Responsibilities
+The team worked together using an egoless leadership style  
+
 Chris: Secretarial duties including taking meeting notes, managing documentation, communicating with the client, and assisting in coding the games logic.  
 
 Daniel: Research into the assets needed for the game, management of media and functionality of the GUI, and error control.  
