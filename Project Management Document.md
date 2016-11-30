@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.8
+Version 2.0
 
 ###Table of Contents
 Table of Contents  
@@ -21,7 +21,7 @@ Revision History
 ###3. Design Process Model  
     1. Overview
     2 Design Dependancies
-###4. Management & Version Control
+###4. Configuration Management & Version Control
     1. Overview
     2. Version Structure
     3. Programming Methodology and Commenting
@@ -57,6 +57,7 @@ Revision History
 |Christopher Gore|10/31|Inclusion of Meeting Schedule and Notes|1.7|
 |Christopher Gore|10/31|Minor edits|1.8|
 |Stephen Harb|10/31|Inclusion of section 6|1.9|
+|Christopher Gore|10/31|Includion of section 4|2.0|
 
 
 
@@ -93,11 +94,14 @@ Figure 1. UML For Project
 ####3.2 Design Dependancies
 Team [SDMC] planed to use the Unity development engine to develop the GUI, the assumption waas that the team would be able to use the engine for free and have limitless access to the software. However, the team was not able to begin developing a game engine in Unity, and a decision was made to switch to Java. The System was designed using the OpenGL, Lightweight Java Game Liibrary, and Slick2D's Untility library. These libraries allowed for the development of a game engine as well as worked with the system architecture that the team had already created. 
 
-###4. Management & Version Control
-####4.1. Overview
+###4. Configuration Management & Version Control
+####4.1. Overview 
+Our group used IDEs such as Eclipse and NetBeans as platforms to program the game in.  Additionally, websites such as GitHub were used as a platform for version control.  In order to facilitate communication within the group texting, emails, and the GroupMe application were used to keep in contact.  
 ####4.2. Version Structure
+Our group used GitHub as our primary source of version control and document management.  Originally, we started out with Google Drive as our source for documentation but switched over to GitHub in order to use its version integration and markdown formatting.  
 ####4.3. Programming Methodology and Commenting
-####4.4 Configuration Management 
+Our code was created using the Java language and IDEs such as Eclipse and NetBeans were used to as platforms to facilitate coding and testing of the game.  
+
 
 ###5. Management of Deliverables
 ####5.1. Timeline of Project and Deliverables
