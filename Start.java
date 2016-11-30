@@ -7,6 +7,16 @@ import helpers.Painter;
 
 import static helpers.Painter.*;
 
+/**
+ * @author Daniel
+ * Change Log:
+ *  Daniel- original code
+ * 	Mason- changes to Move(), start specifically some faulty logic repeated
+ *  Stephan, Mason - changes to Move() changes to start() clear up 
+ *  Daniel- finishing code 
+ */
+
+
 public class Start {
 	public int moveXp;
 	public int moveYp;
@@ -17,6 +27,9 @@ public class Start {
 	public SqGrid grid;
 	public boolean entered = false;
 	Square s;
+	public boolean pTurn = true;
+	public int countTurn = 0;
+	public boolean turnMark = true;
 
 	
 	/**
@@ -28,92 +41,110 @@ public class Start {
 	public void Move() throws InterruptedException {
 		while (Keyboard.next()) {
 			if (Keyboard.getEventKeyState()) {
-				//blue dolphin up
 				if (Keyboard.getEventKey() == Keyboard.KEY_UP) {
-					int move = this.moveYp - p.CheckMove(this.movement, "UP", grid);
-					if (moveXp != moveXe || moveYp - move != moveYe)
-						this.moveYp -= p.CheckMove(this.movement, "UP", grid);
+					if (turnMark == true) {
+						int move = this.moveYp - p.CheckMove(this.movement, "UP", grid);
+						if (moveXp != moveXe || moveYp - move != moveYe)
+							this.moveYp -= p.CheckMove(this.movement, "UP", grid);
+					}
+					turnMark = false;
 				}
-				//blue dolphin left
-				if (Keyboard.getEventKey() == Keyboard.KEY_LEFT) {
+
+			}
+
+			if (Keyboard.getEventKey() == Keyboard.KEY_LEFT) {
+				if (turnMark == true) {
 					int move = p.CheckMove(this.movement, "LEFT", grid);
 					if (moveXp - move != moveXe || moveYp != moveYe)
 						this.moveXp -= p.CheckMove(this.movement, "LEFT", grid);
-
 				}
-				//blue dolphin down
-				if (Keyboard.getEventKey() == Keyboard.KEY_DOWN) {
+				turnMark = false;
+			}
+
+			if (Keyboard.getEventKey() == Keyboard.KEY_DOWN) {
+				if (turnMark == true) {
 					int move = p.CheckMove(this.movement, "DOWN", grid);
 					if (moveXp != moveXe || moveYp + move != moveYe)
 						this.moveYp += p.CheckMove(this.movement, "DOWN", grid);
 				}
-				//blue dolphin right
-				if (Keyboard.getEventKey() == Keyboard.KEY_RIGHT) {
+				turnMark = false;
+			}
+
+			if (Keyboard.getEventKey() == Keyboard.KEY_RIGHT) {
+				if (turnMark == true) {
 					int move = p.CheckMove(this.movement, "RIGHT", grid);
 					if (moveXp + move != moveXe || moveYp != moveYe)
 						this.moveXp += move;
 				}
-				//red dolphin up using W
-				if (Keyboard.getEventKey() == Keyboard.KEY_W) {
-					int move = e.CheckMove(this.movement, "UP", grid);
-					if (moveXp != moveXe || moveYe - move != moveYp)
-						this.moveYe -= e.CheckMove(this.movement, "UP", grid);
-				}
-				//red dolphin left using A
-				if (Keyboard.getEventKey() == Keyboard.KEY_A) {
-					int move = e.CheckMove(this.movement, "LEFT", grid);
-					if (moveXp != moveXe - move || moveYe != moveYp)
-						this.moveXe -= e.CheckMove(this.movement, "LEFT", grid);
-				}
-				//red dolphin down using S
-				if (Keyboard.getEventKey() == Keyboard.KEY_S) {
-					int move = e.CheckMove(this.movement, "DOWN", grid);
-					if (moveXp != moveXe || moveYe + move != moveYp)
-					{
-						this.moveYe += e.CheckMove(this.movement, "DOWN", grid);
-					}
-					
-				}
-				//red dolphin right using D
-				if (Keyboard.getEventKey() == Keyboard.KEY_D) {
-					int move = e.CheckMove(this.movement, "RIGHT", grid);
-					if (moveXp != moveXe + move || moveYe != moveYp)
-						this.moveXe += e.CheckMove(this.movement, "RIGHT", grid);
-				}
-				
-				//PRESS F too attack with the red dolphin
-				if (Keyboard.getEventKeyState()) {
-					if (Keyboard.getEventKey() == Keyboard.KEY_F) 
-					{
-						if(p.posX - e.posX <= 128 && p.posX - e.posX >= -128 && e.isAlive)
-						{
-						p.health -= 1;
+				turnMark = false;
+			}
+
+			if (Keyboard.getEventKeyState()) {
+				if (Keyboard.getEventKey() == Keyboard.KEY_M) {
+					if (turnMark == true) {
+						if (p.posX - e.posX <= 256 && p.posX - e.posX >= -256 && p.isAlive) {
+							e.health -= 1;
 						}
 					}
+					turnMark = false;
 				}
-				
-				//PRESS M too attack with the blue dolphin
-				if (Keyboard.getEventKeyState()) {
-					if (Keyboard.getEventKey() == Keyboard.KEY_M) 
-					{
-						if(p.posX - e.posX <= 128 && p.posX - e.posX >= -128 && p.isAlive)
-						{
-						e.health -= 1;
-						}
-					}
-				}
+
 			}
-			if(e.health <= 0)
-			{
-				e.isAlive = false;   //red dolphin is dead
+		}
+		if (Keyboard.getEventKey() == Keyboard.KEY_W) {
+			if ((turnMark == false)) {
+				int move = e.CheckMove(this.movement, "UP", grid);
+				if (moveXp != moveXe || moveYe - move != moveYp)
+					this.moveYe -= e.CheckMove(this.movement, "UP", grid);
+				turnMark = true;
 			}
-			if(p.health <= 0)
-			{
-				p.isAlive = false;   //blue  dolphin is dead
-			}
-			
 		}
 
+		if (Keyboard.getEventKey() == Keyboard.KEY_A) {
+			if (turnMark == false) {
+				int move = e.CheckMove(this.movement, "LEFT", grid);
+				if (moveXp != moveXe - move || moveYe != moveYp)
+					this.moveXe -= e.CheckMove(this.movement, "LEFT", grid);
+			}
+			turnMark = true;
+		}
+
+		if (Keyboard.getEventKey() == Keyboard.KEY_S) {
+			if (turnMark == false) {
+				int move = e.CheckMove(this.movement, "DOWN", grid);
+				if (moveXp != moveXe || moveYe + move != moveYp) {
+					this.moveYe += e.CheckMove(this.movement, "DOWN", grid);
+				}
+				turnMark = true;
+			}
+		}
+
+		if (Keyboard.getEventKey() == Keyboard.KEY_D) {
+			if (turnMark == false) {
+				int move = e.CheckMove(this.movement, "RIGHT", grid);
+				if (moveXp != moveXe + move || moveYe != moveYp)
+					this.moveXe += e.CheckMove(this.movement, "RIGHT", grid);
+				turnMark = true;
+			}
+		}
+
+		if (Keyboard.getEventKeyState()) {
+			if (Keyboard.getEventKey() == Keyboard.KEY_F) {
+				if (turnMark == false) {
+					if (p.posX - e.posX <= 256 && p.posX - e.posX >= -256 && e.isAlive) {
+						p.health -= 1;
+					}
+					turnMark = true;
+				}
+			}
+		}
+
+		if (e.health <= 0) {
+			e.isAlive = false;
+		}
+		if (p.health <= 0) {
+			p.isAlive = false;
+		}
 	}
 
 
