@@ -135,10 +135,10 @@ A lack of communication would leave the team unable to develop further and each 
 ####6.2. Time Management
 Time management was observed and maintained in two ways. First through team communication and accountability. Members of the team had to stay in contact with each other on a near daily bases, meaning the time was managed as a group. A preliminary timeline was created in the first incarnation of a team contract, and while that was not adhered to, the team still followed the ideology of this timeline as a structure for the project.  Two charts were used for timelines to handle time mangement. the first is an abandoned preliminary review of a potential timeline, the second was what we actually did and what documents we actually had to generate.
 
-![alt tag]https://cloud.githubusercontent.com/assets/16145394/20735793/0d39ed7e-b668-11e6-8999-2303c3d3d10c.PNG  
+![alt tag](https://cloud.githubusercontent.com/assets/16145394/20735793/0d39ed7e-b668-11e6-8999-2303c3d3d10c.PNG)  
 Figure 2. Preliminary Chart for potential timeline and documents  
 
-![alt tag]https://cloud.githubusercontent.com/assets/16145394/20735798/163a5044-b668-11e6-9756-83928fd7fdf9.PNG  
+![alt tag](https://cloud.githubusercontent.com/assets/16145394/20735798/163a5044-b668-11e6-9756-83928fd7fdf9.PNG)  
 Figure 3. Actual Timeline and Chart for delivered Documents  
 
 ####6.3. Technical Risk Management Strategy
