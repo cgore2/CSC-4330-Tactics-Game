@@ -132,7 +132,6 @@ For future features, implementing the un-included features into the demo would b
 ###Appendix 
 ####1. Meeting Schedule and Notes
 
-Meetings Summary  
 8/29/16 – Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – First meeting with group members.  Discussed possible ideas for project including a project based on measuring weather changes around LSU, a project involving image recognition, a project involving the use of GoPros and a couple of ideas for games.  
 
 9/6/16 – Chris Gore, Stephen Harb, Daniel LaBorde – Finalized our decision on what project we wanted, assigned roles to members, and created a basic outline for the project.  
