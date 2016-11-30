@@ -129,4 +129,4 @@ The demo for SDMC did not include many of the planed features. The primary lacki
 For future features, implementing the un-included features into the demo would be mandatory. Another main area that needs to be developed is a cross platform implementation, potentially even a system that allows for online and mobile play. Background music for the game is nonexistent and would be a place to develop artistic depth into the game. There are multiple potential platforms this game could be marketed on, and they may need to be explored. The future of Sub-Dolphin Machine Cannon would be mostly completing the experience of the game.
  
 ###Appendix 
-    ####1. Meeting Schedule and Notes
+####1. Meeting Schedule and Notes
