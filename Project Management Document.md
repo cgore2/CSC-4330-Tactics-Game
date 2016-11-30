@@ -84,10 +84,12 @@ Availability: Users with the proper devices to access the game will have access 
 ###3. Design Process Model 
 ####3.1. Overview
 Extreme programming was the optimal design process for Team [SDMC]. As an egoless team that had four members of roughly equal skill, having team members work together on each area of code, and then prototype rapidly allowed for the most efficent development of code and a working product. Development was based off a UML created early on, however, while the UML was used as a base point fro design, as development went on, the system heiarchy was forced to change.
-![alt tag](https://cloud.githubusercontent.com/assets/16145394/20734781/56429d92-b661-11e6-8be8-8263c146db84.png)
 
-####3.2. Team Structure
-####3.3. Extreme Programming Methodlogy
+![alt tag](https://cloud.githubusercontent.com/assets/16145394/20734781/56429d92-b661-11e6-8be8-8263c146db84.png)
+Figure 1. UML For Project
+
+####3.2 Design Dependancies
+Team [SDMC] planed to use the Unity development engine to develop the GUI, the assumption waas that the team would be able to use the engine for free and have limitless access to the software. However, the team was not able to begin developing a game engine in Unity, and a decision was made to switch to Java. The System was designed using the OpenGL, Lightweight Java Game Liibrary, and Slick2D's Untility library. These libraries allowed for the development of a game engine as well as worked with the system architecture that the team had already created. 
 
 ###4. Management & Version Control
 ####4.1. Overview
