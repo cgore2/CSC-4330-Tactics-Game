@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.16
+Version 1.17
 
 ###Table of Contents
 Table of Contents  
@@ -44,24 +44,25 @@ Revision History
 ###Revision History
 |Name|Date|Reason for Changes|Version|
 |---|---|---|---|
-|Stephen Harb|10/30|Creation of Document|1.0|
-|Stephen Harb|10/30|Section 1 introduction inclusion|1.1|
-|Stephen Harb|10/30|Section 2 Objectives Inclusion|1.2|
-|Stephen Harb|10/30|Adding all the Subsection titles|1.3|
-|Stephen Harb|10/30|Inclusion of section 8|1.4|
-|Stephen Harb|10/30|Inclusion of section 5|1.5|
-|Stephen Harb|10/30|Inclusion of section 3|1.6|
-|Christopher Gore|10/30|Inclusion of Meeting Schedule and Notes|1.7|
-|Christopher Gore|10/30|Minor edits|1.8|
-|Stephen Harb|10/30|Inclusion of section 6|1.9|
-|Christopher Gore|10/30|Inclusion of section 4|1.10|
-|Stephen Harb|10/30|Inclusion of section 6 charts|1.11|
-|Stephen Harb|10/30|Removal of section 7, section 8 renamed to 7|1.12|
-|Christopher Gore|10/30|Inclusion of section 5.4|1.13|
-|Christopher Gore|10/30|Minor changes|1.14|
+|Stephen Harb|11/29|Creation of Document|1.0|
+|Stephen Harb|11/29|Section 1 introduction inclusion|1.1|
+|Stephen Harb|11/29|Section 2 Objectives Inclusion|1.2|
+|Stephen Harb|11/29|Adding all the Subsection titles|1.3|
+|Stephen Harb|11/29|Inclusion of section 8|1.4|
+|Stephen Harb|11/29|Inclusion of section 5|1.5|
+|Stephen Harb|11/29|Inclusion of section 3|1.6|
+|Christopher Gore|11/29|Inclusion of Meeting Schedule and Notes|1.7|
+|Christopher Gore|11/29|Minor edits|1.8|
+|Stephen Harb|11/29|Inclusion of section 6|1.9|
+|Christopher Gore|11/29|Inclusion of section 4|1.10|
+|Stephen Harb|11/29|Inclusion of section 6 charts|1.11|
+|Stephen Harb|11/29|Removal of section 7, section 8 renamed to 7|1.12|
+|Christopher Gore|11/29|Inclusion of section 5.4|1.13|
+|Christopher Gore|11/29|Minor changes|1.14|
 |Mason Meredith|10/30|Minor changes|1.14|
 |Daniel LaBorde|11/30|added my contributions to the project|1.15|
 |Stephen Harb|11/30|added my contributions to the project and minor edits|1.16|
+|Christopher Gore|11/30|added my contributions to the project and minor edits|1.17|
 
 
 ###1. Introduction
@@ -176,6 +177,8 @@ Daniel LaBorde: I met with the group, got to know everyone, and discussed projec
 
 Stephen Harb: Joined with the group and brought up a few ideas. I discussed projects I have worked on in the past that were related to the ideas we brought up.
 
+Chris Gore: Met with the group for the first time and discussed potential ideas for the project.
+
 ####9/6/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde – Finalized our decision on what project we wanted, assigned roles to members, and created a basic outline for the project.
 
@@ -185,12 +188,16 @@ Daniel LaBorde: I picked out my roles for the project and worked on our first pr
 
 Stephen Harb: I had made a first contract for the team that helped outline preliminary work timelines, we did not sign it, however, it was a reference document for future work.
 
+Chris Gore: I volunteered for my positions in this meeting
+
 ####9/29/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed basic design features needed to implement the project including a grid system for our game board and the information needed to build individual units. Discussed which engine to use to make the game in.
 
 Mason Meredith: This was primarily a idea meeting, but I did suggest working with gamemaker though in the end we went with Unity. 
 
 Daniel LaBorde: discussed game design with everyone.
+
+Chris Gore: We spoke about game design and I voted for using Unity as the engine to make our game in.
 
 ####10/21/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met up to work on SRS document as a group. Combined individual entries into a single document.
@@ -201,10 +208,14 @@ Daniel LaBorde: completed section 5 of our SRS document
 
 Stephen Harb: I contributed early content to the SRS sections and did rewrites for secitons 1,2,3 as well as first document edits.
 
+Chris Gore: I primarily worked on editing the final version of the document.
+
 ####10/24/16 – 
 Chris Gore, Mason Meredith – Spent meeting discussing and getting acquainted with the Unity engine.
 
 Mason Meredith: Simple meeting were I started to explore unity on my computer, and discuss future uses. 
+
+Chris Gore: I took a more in depth look at the Unity game engine with Mason and discussed ideas regarding game design with him.
 
 ####10/25/16 - 
 Daniel LaBorde: created the two dolphin sprites and other textures using paint.net
@@ -218,6 +229,8 @@ Daniel LaBorde: created the development view diagram and added my sample dolphin
 
 Stephen Harb: I made the write section 3 and 4, created the interface flowchart and assisted with document edits.
 
+Chris Gore: I created and formatted the initial document that we used and made entries into what would eventually become sections 1, 6, and 7. Additionally, I did large amounts of edits throughout the document and worked on integrating the different versions of the document.
+
 ####11/7/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Began separation of coding duties and implementing classes and the basic framework to be used in our project. Included are creating the unit class and all fields needed for the dolphin units which was implemented by Chris Gore and Daniel LaBorde. The background and the basics of the game board was assigned to Stephen Harb. Lastly, the Player class involving what is to be controlled by the players was to be implemented by Mason Meredith.
 
@@ -226,6 +239,8 @@ Mason Meredith: Simple duty assignments. Each of us were more or less equally in
 Daniel LaBorde: discussed and got assigned coding duties.
 
 Stephen Harb: Created a preliminary UML for the code based on a previous but related project, discussed roles using unity.
+
+Chris Gore: I was assigned the unit section of the project to work on with Daniel
 
 ####11/10/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation. Discussions on abandoning Unity engine due to difficulties the team had with working with the engine.
@@ -236,6 +251,8 @@ Daniel LaBorde: discussed details on project implementation.
 
 Stephen Harb: I advocated for dropping unity, as I was not making progress in using the system for design. 
 
+Chris Gore: Contributed to discussion involving continued use of Unity
+
 ####11/14/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation. Team voted against the use of Unity and began reworking code to be used in our own game engine developed using Java.
 
@@ -244,6 +261,8 @@ Mason Meredith: In this meeting I gave up the fight for unity, and instead focus
 Daniel LaBorde: voted for making our game engine in java.
 
 Stephen Harb: Began switching gears into development in java, and we began working on potential implementations and enviroments for the new development. 
+
+Chris Gore: Voted for abandoning Unity in favor of programming in Java
 
 ####11/17/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Testing Document and integrate test cases worked on individually. Looked over each other’s work and edited test cases.
@@ -254,10 +273,14 @@ Daniel LaBorde: created test cases 0-4.
 
 Stephen Harb:I created the base template for the test cases and submitted the list of potential test cases. I also wrote  sections 5,6 and 9. 
 
+Chris Gore: I created test cases 7 and 8 and worked on minor edits after the document was finished.
+
 ####11/22/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Further discussions regarding the teams coding duties and what we would be working on over the break.
 
 Mason Meredith: I discussed the structure mostly. 
+
+Chris Gore: I attended the meeting and contributed to discussion on what we would be doing.
 
 ####11/24/16 - 
 Daniel LaBorde: I did the research for implementing the external game libraries used for our game (LWJGL, OpenGL, Slick-util).
@@ -272,6 +295,8 @@ Mason Meredith: I worked creating a partial project of all areas of the full pro
 
 Daniel LaBorde: worked with the group to edit and fix our code.
 
+Chris Gore: Worked with group to make edits to the code and fix problem areas.
+
 ####11/27/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Made finishing touches on code. Made finalized version of PowerPoint presentation. Filmed video of project demo and discussed what we would be saying during the presentation.
 
@@ -281,6 +306,8 @@ Daniel LaBorde: made more edits and fixes to the code.
 
 Stephen Harb: I added the attack function into the move function and worked on the turned based control.
 
+Chris Gore: I helped to make edits to the code and worked on the art for the main menu of the game.
+
 ####11/28/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to do an extra couple of run-throughs of the presentation and make sure we all knew our parts.
 
@@ -289,6 +316,8 @@ Mason Meredith: I was in charge of practicing the demo slides/ timing the presen
 Daniel LaBorde: practiced our final presentation with the group
 
 Stephen Harb: I made the slides for the final presentation and assited in making the demo video.
+
+Chris Gore: I helped work on the presentation and assisted in making the video demo.
 
 ####11/29/16 – 
 Daniel LaBorde, Mason Meredith – Meeting to fix java documentation and make minor changes to parts of the code. Meeting occurred via GroupMe.
@@ -302,4 +331,4 @@ Chris Gore, Stephen Harb – Meeting to go over Project Management Document and 
 
 Stephen Harb: I worked on and wrote sections 1,2,3,6,7 of the project management document and included information from previous documents. 
 
-
+Chris Gore: I worked on section 4 and 5, as well as, recording the meeting notes I had been keeping into the appendix section.
