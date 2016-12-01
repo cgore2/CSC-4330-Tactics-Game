@@ -245,7 +245,7 @@ Mason Meredith: I discussed the structure mostly.
 Daniel LaBorde: I did the research for implementing the external game libraries used for our game (LWJGL, OpenGL, Slick-util).
 
 ####11/25/16 - 
-Daniel LaBorde: I wrote out the main architecture for the code. Inlucding the Start, Player, Square, Painter, SqType, and SqGrid classes and all of their methods. Not including the methods written or changed later on by team members. 
+Daniel LaBorde: I wrote out the main architecture for the code. Including the Start, Player, Square, Painter, SqType, and SqGrid classes and all of their methods. Not including the methods written or changed later on by team members. 
 
 ####11/26/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on code in a group setting.
