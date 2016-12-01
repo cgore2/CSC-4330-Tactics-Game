@@ -199,7 +199,7 @@ Chris Gore, Mason Meredith – Spent meeting discussing and getting acquainted w
 Mason Meredith: Simple meeting were I started to explore unity on my computer, and discuss future uses. 
 
 ####10/25/16 - 
-Daniel LaBorde - created the two dolphin sprites and other textures usings paint.net
+Daniel LaBorde: created the two dolphin sprites and other textures using paint.net
 
 ####11/2/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Design Document as a group. Integrated our individual contributions and edited each other’s contributions to the document.
