@@ -177,7 +177,7 @@ Chris Gore, Stephen Harb, Daniel LaBorde – Finalized our decision on what proj
 
 Mason Meredith: I failed to attend this meeting due to the flood work with my family. 
 
-Daniel LaBorde: I picked my role for the project and worked on our first presentation.
+Daniel LaBorde: I picked out my roles for the project and worked on our first presentation.
 
 ####9/29/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed basic design features needed to implement the project including a grid system for our game board and the information needed to build individual units. Discussed which engine to use to make the game in.
