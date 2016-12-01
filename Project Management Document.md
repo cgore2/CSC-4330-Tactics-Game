@@ -4,7 +4,7 @@ Group: SDMC
 
 Team Members: Christopher Gore, Stephen Harb, Daniel LaBorde, Mason Meredith
 
-Version 1.15
+Version 1.16
 
 ###Table of Contents
 Table of Contents  
@@ -20,7 +20,7 @@ Revision History
     2. Quality Attributes
 ###3. Design Process Model  
     1. Overview
-    2 Design Dependancies
+    2. Design Dependencies
 ###4. Configuration Management & Version Control
     1. Overview
     2. Version Structure
@@ -29,7 +29,7 @@ Revision History
     1. Timeline of Project and Deliverables
     2. Fabrication Schedule
     3. Quality Assurance
-    4. Team Responsibilites
+    4. Team Responsibilities
 ###6. Risk Management
     1. Sources of Risk
     2. Time Management
@@ -61,6 +61,7 @@ Revision History
 |Christopher Gore|10/30|Minor changes|1.14|
 |Mason Meredith|10/30|Minor changes|1.14|
 |Daniel LaBorde|11/30|added my contributions to the project|1.15|
+|Stephen Harb|11/30|added my contributions to the project and minor edits|1.16|
 
 
 ###1. Introduction
@@ -173,12 +174,16 @@ Mason Meredith: Simple discussion of ideas, some in meeting research, and later 
 
 Daniel LaBorde: I met with the group, got to know everyone, and discussed project ideas.
 
+Stephen Harb: Joined with the group and brought up a few ideas. I discussed projects I have worked on in the past that were related to the ideas we brought up.
+
 ####9/6/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde – Finalized our decision on what project we wanted, assigned roles to members, and created a basic outline for the project.
 
 Mason Meredith: I failed to attend this meeting due to the flood work with my family. 
 
 Daniel LaBorde: I picked out my roles for the project and worked on our first presentation.
+
+Stephen Harb: I had made a first contract for the team that helped outline preliminary work timelines, we did not sign it, however, it was a reference document for future work.
 
 ####9/29/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed basic design features needed to implement the project including a grid system for our game board and the information needed to build individual units. Discussed which engine to use to make the game in.
@@ -193,6 +198,8 @@ Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met up to work on S
 Mason Meredith: I contributed to the first addition of functional requirements, changes to sections 3-4, additions to sections 2-5, addition of user class flowcharts, addition to Sections 3 and 5, and addition of the menu diagram.
 
 Daniel LaBorde: completed section 5 of our SRS document
+
+Stephen Harb: I contributed early content to the SRS sections and did rewrites for secitons 1,2,3 as well as first document edits.
 
 ####10/24/16 – 
 Chris Gore, Mason Meredith – Spent meeting discussing and getting acquainted with the Unity engine.
@@ -209,12 +216,16 @@ Mason Meredith: I added the initial entry into Main System Architecture for sub 
 
 Daniel LaBorde: created the development view diagram and added my sample dolphin sprite.
 
+Stephen Harb: I made the write section 3 and 4, created the interface flowchart and assisted with document edits.
+
 ####11/7/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Began separation of coding duties and implementing classes and the basic framework to be used in our project. Included are creating the unit class and all fields needed for the dolphin units which was implemented by Chris Gore and Daniel LaBorde. The background and the basics of the game board was assigned to Stephen Harb. Lastly, the Player class involving what is to be controlled by the players was to be implemented by Mason Meredith.
 
 Mason Meredith: Simple duty assignments. Each of us were more or less equally involved in this meeting. 
 
 Daniel LaBorde: discussed and got assigned coding duties.
+
+Stephen Harb: Created a preliminary UML for the code based on a previous but related project, discussed roles using unity.
 
 ####11/10/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation. Discussions on abandoning Unity engine due to difficulties the team had with working with the engine.
@@ -223,6 +234,8 @@ Mason Meredith: In this meeting I mainly was the advocate for the Unity.
 
 Daniel LaBorde: discussed details on project implementation.
 
+Stephen Harb: I advocated for dropping unity, as I was not making progress in using the system for design. 
+
 ####11/14/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Discussed further details on project implementation. Team voted against the use of Unity and began reworking code to be used in our own game engine developed using Java.
 
@@ -230,12 +243,16 @@ Mason Meredith: In this meeting I gave up the fight for unity, and instead focus
 
 Daniel LaBorde: voted for making our game engine in java.
 
+Stephen Harb: Began switching gears into development in java, and we began working on potential implementations and enviroments for the new development. 
+
 ####11/17/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to work on Software Testing Document and integrate test cases worked on individually. Looked over each other’s work and edited test cases.
 
 Mason Meredith: Created test case 10 and ll.
 
 Daniel LaBorde: created test cases 0-4.
+
+Stephen Harb:I created the base template for the test cases and submitted the list of potential test cases. I also wrote  sections 5,6 and 9. 
 
 ####11/22/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Further discussions regarding the teams coding duties and what we would be working on over the break.
@@ -262,12 +279,16 @@ Mason Meredith: I coded a good portion of movement, collision, and parts of atta
 
 Daniel LaBorde: made more edits and fixes to the code.
 
+Stephen Harb: I added the attack function into the move function and worked on the turned based control.
+
 ####11/28/16 – 
 Chris Gore, Stephen Harb, Daniel LaBorde, Mason Meredith – Met to do an extra couple of run-throughs of the presentation and make sure we all knew our parts.
 
 Mason Meredith: I was in charge of practicing the demo slides/ timing the presentation.
 
 Daniel LaBorde: practiced our final presentation with the group
+
+Stephen Harb: I made the slides for the final presentation and assited in making the demo video.
 
 ####11/29/16 – 
 Daniel LaBorde, Mason Meredith – Meeting to fix java documentation and make minor changes to parts of the code. Meeting occurred via GroupMe.
@@ -278,5 +299,7 @@ Daniel LaBorde: worked on documentation for Start, Player, and Painter.
 
 ####11/29/16 – 
 Chris Gore, Stephen Harb – Meeting to go over Project Management Document and consolidate information.
+
+Stephen Harb: I worked on and wrote sections 1,2,3,6,7 of the project management document and included information from previous documents. 
 
 
